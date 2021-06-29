@@ -1,7 +1,7 @@
 const gulp = require('gulp');
 const plumber = require('gulp-plumber')
 const browserSync = require('browser-sync').create();
-const sass = require('gulp-sass');
+const sass = require("gulp-sass")(require("node-sass"))
 const imagemin = require("gulp-imagemin");
 const imageminJpegRecompress = require('imagemin-jpeg-recompress');
 const imageminJpegtran = require('imagemin-jpegtran');
@@ -13,7 +13,8 @@ const autoprefixer = require('gulp-autoprefixer');
 const babel = require('gulp-babel');
 const webpack = require("webpack-stream");
 
-sass.compiler = require('node-sass');
+
+
 
 gulp.task('serve', function(){
   browserSync.init({
