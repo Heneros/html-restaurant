@@ -1,0 +1,13 @@
+nav{
+    ul{    
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        .nav__item{
+         min-width: 25px;
+         padding: 0 50px;
+        }
+    }
+     
+
+}

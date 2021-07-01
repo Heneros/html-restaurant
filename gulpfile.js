@@ -66,7 +66,7 @@ gulp.task('allimg', function(){
 
 
 gulp.task('sass', function () {
-return gulp.src(cssFiles)
+return gulp.src('src/sass/style.scss')
     .pipe(plumber())
     .pipe(sass())
     .pipe(cssmin())
@@ -162,7 +162,7 @@ gulp.task("build-prod-js", () => {
 
 gulp.task('watch', function(){
     gulp.watch('src/*.html', gulp.series('html')),
-    gulp.watch(cssFiles, gulp.series("sass"), browserSync.reload),
+    gulp.watch('src/sass/style.scss', gulp.series("sass"), browserSync.reload),
     gulp.watch(scripts, gulp.series('js')),  
     gulp.watch("src/js/dev/*.js", gulp.series('build-js')),  
     gulp.watch("src/js/dev/*.js", gulp.series('build-prod-js')),  
