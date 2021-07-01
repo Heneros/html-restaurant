@@ -1,0 +1,25 @@
+body {
+    box-sizing: border-box; 
+    font-family: 'Poppins', Arial, sans-serif;
+    color:#2E266F;
+    background: #FFF5EC;   
+
+}   
+    
+ 
+
+.wrapper{
+    min-width: 320px;
+    max-width: 1645px;  
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.container{
+    margin: 0 auto;
+    min-width: 125px;
+    // min-width: 135px;
+    max-width: 100%;
+    padding: 0 15px;
+}

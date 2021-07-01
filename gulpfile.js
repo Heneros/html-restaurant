@@ -33,14 +33,11 @@ gulp.task('html', function(){
 });
 
 const cssFiles = [
-  "src/sass/*.css",
-  "node_modules/slick-slider/slick/slick.css",
-  "src/sass/*.scss"
+  "src/sass/style.scss" 
 ];
 
 const scripts = [ 
   "node_modules/jquery/dist/jquery.min.js",
-  "node_modules/slick-slider/slick/slick.min.js",
   "src/js/*.js"
 ];
 
