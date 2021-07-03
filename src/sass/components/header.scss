@@ -1,3 +1,8 @@
+header{
+max-height: 124px;
+display: flex;
+justify-content: space-around;
+align-items: center;
 nav{
     ul{    
         display: flex;
@@ -6,8 +11,18 @@ nav{
         .nav__item{
          min-width: 25px;
          padding: 0 50px;
+         font-size: 16px;
+         line-height: 24px;
         }
     }
-     
-
+}
+.logo__header{
+font-family: Poppins;
+font-style: normal;
+font-weight: bold;
+font-size: 72px;
+line-height: 108px;
+text-align: center;
+color: #35CD8C; 
+}
 }
