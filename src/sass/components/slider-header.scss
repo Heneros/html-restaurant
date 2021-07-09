@@ -1,20 +1,28 @@
 .text__slider{
     padding: 0 98px;
-    h1{
+    max-width: 766px;
+    max-height: 450px;
+    .main__title-slider{
         font-family: Poppins;
         font-style: normal;
         font-weight: 900;
         font-size: 200px;
-        // line-height: 300px;
+        line-height: 300px;
         text-transform: capitalize;
-        opacity: 0.05;
+        opacity: 0.05; 
     }
-    h2{
+    .sub__title-slider{
         text-transform: capitalize;
         font-family: Poppins;
         font-style: normal;
         font-weight: bold;
         font-size: 72px;
-        // line-height: 90px;
+        line-height: 90px;
+        line-height: 90px;
+        color: #2E266F;
+        position: relative;
+        bottom: 63px;
     }
+
+
 }
