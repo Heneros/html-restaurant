@@ -27,7 +27,7 @@ font-weight: bold;
 font-size: 72px;
 line-height: 108px;
 text-align: center;
-color: #35CD8C; 
+color: $green; 
 }
 .user__icon{
     height: 52px;
@@ -35,19 +35,36 @@ color: #35CD8C;
     border-radius: 50%;
     background: #FFFFFF;
     position: relative;
+    display: flex;
+    align-items: center;
     img{
         padding-top: 9px;
         padding-left: 11px;
     }
     &:before{
-        position: absolute;
-        left: 39px;
         content: "";
+        position: absolute;
+        bottom: 38px;
+        left: 39px;
         border-radius: 50%;
         display: block;
-        background-color: #31A24C;
+        background-color: $green;
         height: 15px;
         width: 15px;
+    }
+    .user__name{
+        padding-left: 23px;
+        position: relative;
+        cursor: pointer;
+        &:after{
+            content: "";
+            background-image: url('../img/arrow-down.svg');
+            width: 10px;
+            height: 5px;
+            bottom: 8px;
+            right: -15px;
+            position: absolute;
+        }
     }
 }
 }

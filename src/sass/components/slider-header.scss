@@ -2,6 +2,7 @@
     padding: 0 98px;
     max-width: 766px;
     max-height: 450px;
+    position: relative;
     .main__title-slider{
         font-family: Poppins;
         font-style: normal;
@@ -19,10 +20,45 @@
         font-size: 72px;
         line-height: 90px;
         line-height: 90px;
-        color: #2E266F;
+        color: $violet;
         position: relative;
         bottom: 63px;
     }
-
-
+    .search__food{
+        width: 673px;
+        height: 90px;
+        border: none;
+        outline: none;
+        padding: 50px;
+    }
+    .search__food::placeholder{
+      color: $violet;
+      font-size: 18px;
+      line-height: 90px;
+      font-family: Poppins;
+      text-transform: capitalize;
+    }  
+    .input__btn{
+        position: relative;
+    }
+    .search__btn{        
+        background-color: $green;
+        border: none;
+        outline: none;
+        color: $beige;
+        width: 200px;
+        height: 72px;
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 30px;
+        justify-content: center;
+        display: flex;
+        border-radius: 60px 0px 0px 0px;
+        position: absolute;
+        top: 16px;
+        right: 108px;
+        cursor: pointer;
+    }
 }

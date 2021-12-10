@@ -1,12 +1,12 @@
 body {
     box-sizing: border-box; 
     font-family: 'Poppins', Arial, sans-serif;
-    color:#2E266F;
-    background: #FFF5EC;   
+    color: $violet;
+    background: $beige;   
 
 }   
     
- 
+
 
 .wrapper{
     min-width: 320px;
@@ -25,6 +25,6 @@ body {
 }
 
 a{
-    color: #2E266F;
+    color:  $violet;
     text-decoration: none;
 }
