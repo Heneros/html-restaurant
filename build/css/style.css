@@ -376,24 +376,46 @@ header {
     width: 52px;
     border-radius: 50%;
     background: #FFFFFF;
-    position: relative; }
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
     header .user__icon img {
       padding-top: 9px;
       padding-left: 11px; }
     header .user__icon:before {
-      position: absolute;
-      left: 39px;
       content: "";
+      position: absolute;
+      bottom: 38px;
+      left: 39px;
       border-radius: 50%;
       display: block;
-      background-color: #31A24C;
+      background-color: #35CD8C;
       height: 15px;
       width: 15px; }
+    header .user__icon .user__name {
+      padding-left: 23px;
+      position: relative;
+      cursor: pointer; }
+      header .user__icon .user__name:after {
+        content: "";
+        background-image: url("../img/arrow-down.svg");
+        width: 10px;
+        height: 5px;
+        bottom: 8px;
+        right: -15px;
+        position: absolute; }
 
 .text__slider {
   padding: 0 98px;
   max-width: 766px;
-  max-height: 450px; }
+  max-height: 450px;
+  position: relative; }
   .text__slider .main__title-slider {
     font-family: Poppins;
     font-style: normal;
@@ -413,3 +435,104 @@ header {
     color: #2E266F;
     position: relative;
     bottom: 63px; }
+  .text__slider .search__food {
+    width: 673px;
+    height: 90px;
+    border: none;
+    outline: none;
+    padding: 50px; }
+  .text__slider .search__food::-webkit-input-placeholder {
+    color: #2E266F;
+    font-size: 18px;
+    line-height: 90px;
+    font-family: Poppins;
+    text-transform: capitalize; }
+  .text__slider .search__food::-moz-placeholder {
+    color: #2E266F;
+    font-size: 18px;
+    line-height: 90px;
+    font-family: Poppins;
+    text-transform: capitalize; }
+  .text__slider .search__food:-ms-input-placeholder {
+    color: #2E266F;
+    font-size: 18px;
+    line-height: 90px;
+    font-family: Poppins;
+    text-transform: capitalize; }
+  .text__slider .search__food::-ms-input-placeholder {
+    color: #2E266F;
+    font-size: 18px;
+    line-height: 90px;
+    font-family: Poppins;
+    text-transform: capitalize; }
+  .text__slider .search__food::placeholder {
+    color: #2E266F;
+    font-size: 18px;
+    line-height: 90px;
+    font-family: Poppins;
+    text-transform: capitalize; }
+  .text__slider .input__btn {
+    position: relative; }
+  .text__slider .search__btn {
+    background-color: #35CD8C;
+    border: none;
+    outline: none;
+    color: #FFF5EC;
+    width: 200px;
+    height: 72px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 30px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: flex;
+    border-radius: 60px 0px 0px 0px;
+    position: absolute;
+    top: 16px;
+    right: 108px;
+    cursor: pointer; }
+
+.location {
+  background: #35CD8C;
+  border-radius: 0px 100px 100px 0px;
+  max-width: 280px;
+  height: 62px;
+  position: relative;
+  top: 281px; }
+  .location .location__name {
+    color: #fff;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 90px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-transform: capitalize;
+    bottom: 12px;
+    position: relative; }
+    .location .location__name::before {
+      content: "";
+      background-image: url("../img/location.svg");
+      width: 20px;
+      height: 25px;
+      position: absolute;
+      left: 37px; }
