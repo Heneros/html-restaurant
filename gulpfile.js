@@ -69,7 +69,7 @@ gulp.task('sass', function () {
 return gulp.src('src/sass/style.scss')
     .pipe(plumber())
     .pipe(sass())
-    .pipe(cssmin())
+    // .pipe(cssmin())
     .pipe(autoprefixer([
         'last 15 versions',
         '> 1%',
