@@ -338,31 +338,39 @@ header {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center; }
-  header nav ul {
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 115px; }
+  header nav {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    list-style: none;
-    margin-left: 12px; }
-    header nav ul .nav__item {
-      min-width: 25px;
-      padding: 0 45px;
-      font-size: 16px;
-      line-height: 24px; }
-      header nav ul .nav__item:last-child {
-        padding-right: 0; }
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-right: 16em; }
+    header nav ul {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      list-style: none;
+      margin-left: 12px; }
+      header nav ul .nav__item {
+        min-width: 25px;
+        padding: 0 45px;
+        font-size: 16px;
+        line-height: 24px; }
+        header nav ul .nav__item:last-child {
+          padding-right: 0; }
   header .logo__header {
     font-family: Poppins;
     font-style: normal;
@@ -384,7 +392,8 @@ header {
     -webkit-box-align: center;
     -webkit-align-items: center;
         -ms-flex-align: center;
-            align-items: center; }
+            align-items: center;
+    margin-top: 25px; }
     header .user__icon img {
       padding-top: 9px;
       padding-left: 11px; }
@@ -411,8 +420,20 @@ header {
         right: -15px;
         position: absolute; }
 
+.slider__block {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  .slider__block .slider {
+    max-width: 766px; }
+    .slider__block .slider img {
+      max-width: 100%;
+      width: auto; }
+
 .text__slider {
-  padding: 0 98px;
+  padding: 0;
+  margin: 0 45px;
   max-width: 766px;
   max-height: 450px;
   position: relative; }

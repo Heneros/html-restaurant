@@ -1,9 +1,13 @@
 header{
 max-height: 124px;
 display: flex;
-justify-content: space-around;
-align-items: center;
+justify-content: space-between;
+// align-items: center;
+margin: 0 115px;
 nav{
+    display: flex;
+    align-items: center;
+    margin-right: 16em;
     ul{    
         display: flex;
         justify-content: center;
@@ -37,6 +41,7 @@ color: $green;
     position: relative;
     display: flex;
     align-items: center;
+    margin-top: 25px;
     img{
         padding-top: 9px;
         padding-left: 11px;

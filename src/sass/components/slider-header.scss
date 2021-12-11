@@ -1,5 +1,18 @@
+.slider__block{
+    display: flex;
+    .slider{
+        max-width: 766px;
+
+        img{
+    max-width: 100%;
+    width: auto;
+        }
+    }
+}
 .text__slider{
-    padding: 0 98px;
+    // padding: 0 98px;
+    padding: 0;
+    margin: 0 45px;
     max-width: 766px;
     max-height: 450px;
     position: relative;
