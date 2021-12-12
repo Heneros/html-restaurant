@@ -342,7 +342,7 @@ header {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 0 115px; }
+  margin: 0 59px; }
   header nav {
     display: -webkit-box;
     display: -webkit-flex;
@@ -404,7 +404,7 @@ header {
       left: 39px;
       border-radius: 50%;
       display: block;
-      background-color: #35CD8C;
+      background-color: #31A24C;
       height: 15px;
       width: 15px; }
     header .user__icon .user__name {
@@ -419,12 +419,31 @@ header {
         bottom: 8px;
         right: -15px;
         position: absolute; }
+  header::before {
+    content: "";
+    width: 514px;
+    height: 1214px;
+    background-color: #35CD8C;
+    position: absolute;
+    z-index: -1;
+    right: 0; }
 
 .slider__block {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex; }
+  .slider__block .slider__item {
+    position: relative;
+    bottom: 101px; }
+    .slider__block .slider__item::before {
+      content: "";
+      background-image: url("../img/dots-slider.png");
+      position: absolute;
+      height: 645px;
+      width: 451px;
+      z-index: -1;
+      bottom: 75px; }
   .slider__block .slider {
     max-width: 766px; }
     .slider__block .slider img {
@@ -529,7 +548,7 @@ header {
   max-width: 280px;
   height: 62px;
   position: relative;
-  top: 281px; }
+  bottom: 116px; }
   .location .location__name {
     color: #fff;
     font-weight: 500;

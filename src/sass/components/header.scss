@@ -1,9 +1,10 @@
+
 header{
 max-height: 124px;
 display: flex;
 justify-content: space-between;
 // align-items: center;
-margin: 0 115px;
+margin: 0 59px;
 nav{
     display: flex;
     align-items: center;
@@ -53,7 +54,7 @@ color: $green;
         left: 39px;
         border-radius: 50%;
         display: block;
-        background-color: $green;
+        background-color: #31A24C;
         height: 15px;
         width: 15px;
     }
@@ -72,4 +73,13 @@ color: $green;
         }
     }
 }
+&::before{
+    content: "";
+    width: 514px;
+    height: 1214px;
+    background-color: #35CD8C;
+    position: absolute;
+    z-index: -1;
+    right: 0;
+ }
 }

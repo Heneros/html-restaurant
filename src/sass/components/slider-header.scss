@@ -1,8 +1,20 @@
 .slider__block{
     display: flex;
+    .slider__item{
+        position: relative;
+        bottom: 101px;
+        &::before{
+            content: "";
+            background-image: url('../img/dots-slider.png');
+            position: absolute;
+            height: 645px;
+            width: 451px;
+            z-index: -1;
+            bottom: 75px;
+}
+    }
     .slider{
         max-width: 766px;
-
         img{
     max-width: 100%;
     width: auto;
