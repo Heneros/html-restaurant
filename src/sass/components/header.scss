@@ -83,3 +83,25 @@ color: $green;
     right: 0;
  }
 }
+
+@media(max-width: 1652px) {
+    header{
+        justify-content: unset;
+    }
+}
+@media(max-width: 1484px) {
+    header nav ul .nav__item{
+        padding: 0 28px;
+    }
+    header nav{
+        margin-right: 10em;
+    }
+}
+@media(max-width: 1280px) {
+    header nav ul{
+        margin-left: -35px;
+    }
+    header::before{
+        width: 23% !important;
+    }
+}
