@@ -23,6 +23,14 @@ a {
   color: #2E266F;
   text-decoration: none; }
 
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot?i66uhl");
+  src: url("../fonts/icomoon.eot?i66uhl#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?i66uhl") format("truetype"), url("../fonts/icomoon.woff?i66uhl") format("woff"), url("../fonts/icomoon.svg?i66uhl#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block; }
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -428,6 +436,90 @@ header {
     z-index: -1;
     right: 0; }
 
+.hamburger {
+  display: none;
+  cursor: pointer;
+  transition-property: opacity, -webkit-filter;
+  -webkit-transition-property: opacity, -webkit-filter;
+  -o-transition-property: opacity, filter;
+  transition-property: opacity, filter;
+  transition-property: opacity, filter, -webkit-filter;
+  -webkit-transition-duration: 0.15s;
+  -o-transition-duration: 0.15s;
+     transition-duration: 0.15s;
+  -webkit-transition-timing-function: linear;
+  -o-transition-timing-function: linear;
+     transition-timing-function: linear;
+  font: inherit;
+  color: #FFF5EC;
+  text-transform: none;
+  margin: 0;
+  overflow: visible;
+  width: 50px;
+  height: 32px; }
+
+.hamburger-box {
+  width: 50px;
+  height: 32px;
+  display: inline-block;
+  position: relative; }
+
+.hamburger-inner {
+  display: block;
+  top: 50%;
+  margin-top: 0; }
+
+.hamburger-inner,
+.hamburger-inner::before {
+  width: 50px;
+  height: 6px;
+  /*background-color: $color-violet;*/
+  position: absolute;
+  transition-property: -webkit-transform;
+  -webkit-transition-property: -webkit-transform;
+  -o-transition-property: transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: 0.15s;
+  -o-transition-duration: 0.15s;
+     transition-duration: 0.15s;
+  -webkit-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
+     transition-timing-function: ease;
+  content: "\e908";
+  color: #FFF5EC;
+  font-size: 6px;
+  display: block;
+  font-family: "icomoon"; }
+
+.hamburger-inner:nth-child(1) {
+  top: 0; }
+
+.hamburger-inner:nth-child(2) {
+  top: 50%;
+  margin-top: -3px; }
+
+.hamburger-inner:nth-child(3) {
+  top: 100%;
+  margin-top: -6px; }
+
+.is-active .hamburger--collapse .hamburger-inner:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  top: 50%;
+  margin-top: -3px; }
+
+.is-active .hamburger--collapse .hamburger-inner:nth-child(1) {
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 50%;
+  margin-top: -3px; }
+
+.is-active .hamburger--collapse .hamburger-inner:nth-child(2) {
+  opacity: 0; }
+
 @media (max-width: 1652px) {
   header {
     -webkit-box-pack: unset;
@@ -447,9 +539,26 @@ header {
   header::before {
     width: 23% !important; } }
 
-@media (max-width: 1135px) {
+@media (max-width: 1185px) {
   header nav ul .nav__item {
     padding: 0 10px; } }
+
+@media screen and (max-width: 1084px) {
+  header nav {
+    margin-right: 5em; } }
+
+@media screen and (max-width: 1024px) {
+  header .user__icon {
+    display: none; }
+  .desktop_menu {
+    display: none; }
+  .hamburger {
+    display: inline-block; }
+  header {
+    position: relative; }
+  .mobile-trigger {
+    position: absolute;
+    left: 84%; } }
 
 .slider__block {
   display: -webkit-box;
@@ -617,96 +726,6 @@ header {
 .mobile-trigger {
   display: block;
   margin-left: 25px; }
-
-.hamburger {
-  display: inline-block;
-  cursor: pointer;
-  transition-property: opacity, -webkit-filter;
-  -webkit-transition-property: opacity, -webkit-filter;
-  -o-transition-property: opacity, filter;
-  transition-property: opacity, filter;
-  transition-property: opacity, filter, -webkit-filter;
-  -webkit-transition-duration: 0.15s;
-  -o-transition-duration: 0.15s;
-     transition-duration: 0.15s;
-  -webkit-transition-timing-function: linear;
-  -o-transition-timing-function: linear;
-     transition-timing-function: linear;
-  font: inherit;
-  color: inherit;
-  text-transform: none;
-  margin: 0;
-  overflow: visible;
-  width: 50px;
-  height: 32px; }
-
-.hamburger-box {
-  width: 50px;
-  height: 32px;
-  display: inline-block;
-  position: relative; }
-
-.hamburger-inner {
-  display: block;
-  top: 50%;
-  margin-top: 0; }
-
-.hamburger-inner,
-.hamburger-inner::before {
-  width: 50px;
-  height: 6px;
-  /*background-color: $color-violet;*/
-  position: absolute;
-  transition-property: -webkit-transform;
-  -webkit-transition-property: -webkit-transform;
-  -o-transition-property: transform;
-  transition-property: transform;
-  transition-property: transform, -webkit-transform;
-  -webkit-transition-duration: 0.15s;
-  -o-transition-duration: 0.15s;
-     transition-duration: 0.15s;
-  -webkit-transition-timing-function: ease;
-  -o-transition-timing-function: ease;
-     transition-timing-function: ease;
-  content: "\e908";
-  color: #1b1464;
-  font-size: 6px;
-  display: block;
-  font-family: "icomoon"; }
-
-.hamburger-inner:nth-child(1) {
-  top: 0; }
-
-.hamburger-inner:nth-child(2) {
-  top: 50%;
-  margin-top: -3px; }
-
-.hamburger-inner:nth-child(3) {
-  top: 100%;
-  margin-top: -6px; }
-
-.is-active .hamburger--collapse .hamburger-inner:nth-child(3) {
-  -webkit-transform: rotate(-45deg);
-      -ms-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-  top: 50%;
-  margin-top: -3px; }
-
-.is-active .hamburger--collapse .hamburger-inner:nth-child(1) {
-  -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
-  top: 50%;
-  margin-top: -3px; }
-
-.is-active .hamburger--collapse .hamburger-inner:nth-child(2) {
-  opacity: 0; }
-
-@media screen and (max-width: 1024px) {
-  header .user__icon {
-    display: none; }
-  .desktop_menu {
-    display: none; } }
 
 .location {
   background: #35CD8C;

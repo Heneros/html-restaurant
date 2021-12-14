@@ -1,4 +1,3 @@
-
 header{
 max-height: 124px;
 display: flex;
@@ -83,6 +82,86 @@ color: $green;
     right: 0;
  }
 }
+.hamburger {
+    display: none;
+    cursor: pointer;
+    transition-property: opacity, -webkit-filter;
+    -webkit-transition-property: opacity, -webkit-filter;
+    transition-property: opacity, filter;
+    transition-property: opacity, filter, -webkit-filter;
+    -webkit-transition-duration: 0.15s;
+    transition-duration: 0.15s;
+    -webkit-transition-timing-function: linear;
+    transition-timing-function: linear;
+    font: inherit;
+    color: $beige;
+    text-transform: none;
+    margin: 0;
+    overflow: visible;
+    width: 50px;
+    height: 32px;
+}
+
+.hamburger-box {
+    width: 50px;
+    height: 32px;
+    display: inline-block;
+    position: relative;
+}
+
+.hamburger-inner {
+    display: block;
+    top: 50%;
+    margin-top: 0;
+}
+
+.hamburger-inner,
+.hamburger-inner::before {
+    width: 50px;
+    height: 6px; /*background-color: $color-violet;*/
+    position: absolute;
+    transition-property: -webkit-transform;
+    -webkit-transition-property: -webkit-transform;
+    transition-property: transform;
+    transition-property: transform, -webkit-transform;
+    -webkit-transition-duration: 0.15s;
+    transition-duration: 0.15s;
+    -webkit-transition-timing-function: ease;
+    transition-timing-function: ease;
+    content: "\e908";
+    color: $beige;
+    font-size: 6px;
+    display: block;
+    font-family: "icomoon";
+}
+ 
+.hamburger-inner:nth-child(1) {
+    top: 0;
+}
+.hamburger-inner:nth-child(2) {
+    top: 50%;
+    margin-top: -3px;
+}
+.hamburger-inner:nth-child(3) {
+    top: 100%;
+    margin-top: -6px;
+}
+.is-active .hamburger--collapse .hamburger-inner:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 50%;
+    margin-top: -3px;
+}
+.is-active .hamburger--collapse .hamburger-inner:nth-child(1) {
+    transform: rotate(45deg);
+    top: 50%;
+    margin-top: -3px;
+}
+
+.is-active .hamburger--collapse .hamburger-inner:nth-child(2) {
+    opacity: 0;
+}
+
+
 
 @media(max-width: 1652px) {
     header{
@@ -105,7 +184,7 @@ color: $green;
         width: 23% !important;
     }
 }
-@media(max-width: 1135px) {
+@media(max-width: 1185px) {
     header nav ul .nav__item {
         padding: 0 10px;
     }
@@ -113,3 +192,32 @@ color: $green;
         // margin-right: 6em;
     }
 }
+@media screen and (max-width: 1084px){
+    header nav {
+        margin-right: 5em;
+    }
+}
+@media screen and (max-width: 1024px){
+    header .user__icon{
+        display: none;
+    }
+    .mobile__menu{
+        // display: block;
+    }
+  .desktop_menu{
+    display: none; 
+  }
+  .hamburger{
+      display: inline-block;
+  }
+  header{
+      position: relative;
+  }
+  .mobile-trigger{
+    position: absolute;
+    left: 84%;
+  }
+
+}
+
+
