@@ -105,3 +105,11 @@ color: $green;
         width: 23% !important;
     }
 }
+@media(max-width: 1135px) {
+    header nav ul .nav__item {
+        padding: 0 10px;
+    }
+    header nav {
+        // margin-right: 6em;
+    }
+}

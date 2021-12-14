@@ -9,9 +9,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Expice</title>
-</head>   
+</head>    
 <body>        
-    <div class="bgc__right"></div>
       <div class="wrapper">
           <div class="container">
               <header>
@@ -19,21 +18,36 @@
                     expice
                   </a>
                   <nav>
-                  <ul>
+                  <ul class="desktop_menu"> 
                       <li class="nav__item"><a href="#!">First Item</a></li>
                       <li class="nav__item"><a href="#!">Second Item</a></li>
                       <li class="nav__item"><a href="#!">Third Item</a></li>
                       <li class="nav__item"><a href="#!">Four Item</a></li>
                   </ul> 
+                  <ul class="mobile__menu">
+                    <li class="nav__item"><a href="#!">First Item</a></li>
+                    <li class="nav__item"><a href="#!">Second Item</a></li>
+                    <li class="nav__item"><a href="#!">Third Item</a></li>
+                    <li class="nav__item"><a href="#!">Four Item</a></li>
+                  </ul>
                 </nav>
+                <a href="#" id="hamburger" class="mobile-trigger js-mobile-menu">
+                  <span class="hamburger hamburger--collapse">
+                      <span class="hamburger-box">
+                          <span class="hamburger-inner"></span>
+                          <span class="hamburger-inner"></span>
+                          <span class="hamburger-inner"></span>
+                      </span>
+                  </span>
+          </a>
                 <div class="user__icon">
                     <img src="img/user-icon.svg" alt="user-icon">
                     <span class="user__name">User</span>
                 </div>
               </header>
-             
           </div>
         </div>  
+        <!---Starts Slider-->
       <div class="wrapper">
         <div class="container">
             <div class="slider__block">
