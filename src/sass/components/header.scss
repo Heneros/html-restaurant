@@ -118,7 +118,7 @@ color: $green;
 .hamburger-inner,
 .hamburger-inner::before {
     width: 50px;
-    height: 6px; /*background-color: $color-violet;*/
+    height: 6px; 
     position: absolute;
     transition-property: -webkit-transform;
     -webkit-transition-property: -webkit-transform;
@@ -146,7 +146,7 @@ color: $green;
     top: 100%;
     margin-top: -6px;
 }
-.is-active .hamburger--collapse .hamburger-inner:nth-child(3) {
+.is-active .hamburger--collapse .hamburger-inner:nth-child(2) {
     transform: rotate(-45deg);
     top: 50%;
     margin-top: -3px;
@@ -157,8 +157,13 @@ color: $green;
     margin-top: -3px;
 }
 
-.is-active .hamburger--collapse .hamburger-inner:nth-child(2) {
+.is-active .hamburger--collapse .hamburger-inner:nth-child(3) {
     opacity: 0;
+}
+
+body.menu-open{
+    overflow: hidden;
+    height: 100vh;
 }
 
 
@@ -188,9 +193,6 @@ color: $green;
     header nav ul .nav__item {
         padding: 0 10px;
     }
-    header nav {
-        // margin-right: 6em;
-    }
 }
 @media screen and (max-width: 1084px){
     header nav {
@@ -200,9 +202,6 @@ color: $green;
 @media screen and (max-width: 1024px){
     header .user__icon{
         display: none;
-    }
-    .mobile__menu{
-        // display: block;
     }
   .desktop_menu{
     display: none; 
@@ -217,7 +216,69 @@ color: $green;
     position: absolute;
     left: 84%;
   }
-
+  .header-nav {
+    height: calc(60vh - 106px);
+    padding: 20px 0;
+    overflow: auto;
+    width: 100%;
+    max-width: 375px;
+    right: -750px;
+    left: auto;
+    top: 10%;
+    position: fixed;
+    transition: all 0.2s linear;
+    background: $green;
+    padding: 11px 0px 17px 0;
+    z-index: 99999;
+}
+.header-nav.active {
+    right: 0;
+}
+.header-nav ul{
+  text-align: center;
+  list-style-type: none ;
+}
+.nav__item{
+    width: 100%;
+    padding: 25px 0 ;
+    border-bottom: 1px solid #fff;
+}
+.nav__item a {
+    color: $beige ;
+    font-size: 30px;
+}
+header::before{
+    right: -74px;
+    width: 35%;
+}
+.header-nav .mobile__menu{
+    display: block;
 }
 
+
+  
+  
+  .burger-menu_active .burger-menu_lines {
+    background-color: transparent;
+  }
+  .burger-menu_active .burger-menu_lines::before {
+    top: 0;
+    transform: rotate(45deg);
+  }
+  .burger-menu_active .burger-menu_lines::after{
+    top: 0;
+    transform: rotate(-45deg);
+  }
+  .hamburger-inner:nth-child(3):before{
+    font-size: 4px !important;
+    direction: rtl;
+  }   
+
+}    
+
+@media (min-width: 1024px){
+    .mobile__menu{
+        display: none;
+    }
+}
 

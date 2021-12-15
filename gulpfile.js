@@ -9,7 +9,8 @@ const pngquant = require('imagemin-pngquant');
 const cssmin = require('gulp-cssmin');
 const concat = require('gulp-concat');
 const autoprefixer = require('gulp-autoprefixer');
-// const uglify = require('gulp-uglify');
+const uglify = require("gulp-uglify");
+
 const babel = require('gulp-babel');
 const webpack = require("webpack-stream");
 
@@ -89,19 +90,19 @@ return gulp.src(scripts)
 .pipe(babel({
   presets: ["@babel/preset-env"]
 }))
-// .pipe(uglify()) 
-// .pipe(concat(('script.js')))
+.pipe(uglify()) 
+.pipe(concat(('script.js')))
 .pipe(gulp.dest('build/js'))
 .pipe(browserSync.reload({stream: true}));
 });
 
 
 gulp.task("build-js", () => {
-  return gulp.src("src/js/dev/*.js")
+  return gulp.src("src/js/*.js")
               .pipe(webpack({
                   mode: 'development',
                   output: {
-                      filename: 'main.js'
+                      filename: 'script.js'
                   },
                   watch: false,
                   devtool: "source-map",
@@ -129,11 +130,11 @@ gulp.task("build-js", () => {
 });
 
 gulp.task("build-prod-js", () => {
-  return gulp.src("src/js/dev/*.js")
+  return gulp.src("src/js/*.js")
               .pipe(webpack({
                   mode: 'production',
                   output: {
-                      filename: 'main.js'
+                      filename: 'script.js'
                   },
                   module: {
                       rules: [
@@ -164,8 +165,8 @@ gulp.task('watch', function(){
     gulp.watch('src/*.html', gulp.series('html')),
     gulp.watch('src/sass/style.scss', gulp.series("sass"), browserSync.reload),
     gulp.watch(scripts, gulp.series('js')),  
-    gulp.watch("src/js/dev/*.js", gulp.series('build-js')),  
-    gulp.watch("src/js/dev/*.js", gulp.series('build-prod-js')),  
+    gulp.watch("src/js/*.js", gulp.series('build-js')),  
+    gulp.watch("src/js/*.js", gulp.series('build-prod-js')),  
     gulp.watch("src/img/**/*.{png,jpg}", gulp.series("images"))
     gulp.watch("src/img/**/*.{png,jpg,svg}", gulp.series("allimg"))
   });
