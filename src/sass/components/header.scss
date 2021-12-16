@@ -166,6 +166,15 @@ body.menu-open{
     height: 100vh;
 }
 
+.mobile__menu{
+    display: none;
+}
+
+.mobile-trigger {
+    display: block;
+    margin-left: 25px;
+}
+
 
 
 @media(max-width: 1652px) {
@@ -214,7 +223,8 @@ body.menu-open{
   }
   .mobile-trigger{
     position: absolute;
-    left: 84%;
+    left: 94%;
+    top: 51px;
   }
   .header-nav {
     height: calc(60vh - 106px);
@@ -254,10 +264,6 @@ header::before{
 .header-nav .mobile__menu{
     display: block;
 }
-
-
-  
-  
   .burger-menu_active .burger-menu_lines {
     background-color: transparent;
   }
@@ -272,9 +278,13 @@ header::before{
   .hamburger-inner:nth-child(3):before{
     font-size: 4px !important;
     direction: rtl;
-  }   
+    // right: 8px;
+  }
 
-}    
+
+} 
+
+
 
 @media (min-width: 1024px){
     .mobile__menu{
