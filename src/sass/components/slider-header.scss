@@ -118,7 +118,28 @@
         width: 30%;
     }
 }
+@media(max-width: 1283px){
+    .slider__block .slider {
+        // width: calc(100% - 653px);
+        width: calc(100% - 552px);
+    }
+    .slick-slide{
+        max-width: 543px !important;
+        margin: 0 47px;
+    }
+    .slider__item{
+        // position: relative;
+        // right: 75px;
+    }
+    .text__slider {
+        margin: 0 14px;
+        width: calc(100% - 599px);
+    }
+    .slider__block .slider img{
+        min-width: 437px;
+    }
 
+}
 @media(max-width: 1255px){
     .slider__block .slider__item::before{
         height: 70%;

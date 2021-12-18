@@ -34,12 +34,16 @@ gulp.task('html', function(){
 });
 
 const cssFiles = [
-  "src/sass/style.scss" 
+  "src/sass/style.scss",
+  "node_modules/slick-slider/slick/slick.css",
+  "node_modules/slick-slider/slick/slick-theme.css",
+
 ];
 
 const scripts = [ 
   "node_modules/jquery/dist/jquery.min.js",
-  "src/js/*.js"
+  "node_modules/slick-slider/slick/slick.min.js",
+  "src/js/*.js",
 ];
 
 
@@ -67,7 +71,7 @@ gulp.task('allimg', function(){
 
 
 gulp.task('sass', function () {
-return gulp.src('src/sass/style.scss')
+return gulp.src(cssFiles)
     .pipe(plumber())
     .pipe(sass())
     // .pipe(cssmin())
@@ -97,81 +101,81 @@ return gulp.src(scripts)
 });
 
 
-gulp.task("build-js", () => {
-  return gulp.src("src/js/*.js")
-              .pipe(webpack({
-                  mode: 'development',
-                  output: {
-                      filename: 'script.js'
-                  },
-                  watch: false,
-                  devtool: "source-map",
-                  module: {
-                      rules: [
-                        {
-                          test: /\.m?js$/,
-                          exclude: /(node_modules|bower_components)/,
-                          use: {
-                            loader: 'babel-loader',
-                            options: {
-                              presets: [['@babel/preset-env', {
-                                  debug: true,
-                                  corejs: 3,
-                                  useBuiltIns: "usage"
-                              }]]
-                            }
-                          }
-                        }
-                      ]
-                    }
-              }))
-              .pipe(gulp.dest('build/js'))
-              .pipe(browserSync.reload({stream: true}));
-});
+// gulp.task("build-js", () => {
+//   return gulp.src(scripts)
+//               .pipe(webpack({
+//                   mode: 'development',
+//                   output: {
+//                       filename: 'script.js'
+//                   },
+//                   watch: false,
+//                   devtool: "source-map",
+//                   module: {
+//                       rules: [
+//                         {
+//                           test: /\.m?js$/,
+//                           exclude: /(node_modules|bower_components)/,
+//                           use: {
+//                             loader: 'babel-loader',
+//                             options: {
+//                               presets: [['@babel/preset-env', {
+//                                   debug: true,
+//                                   corejs: 3,
+//                                   useBuiltIns: "usage"
+//                               }]]
+//                             }
+//                           }
+//                         }
+//                       ]
+//                     }
+//               }))
+//               .pipe(gulp.dest('build/js'))
+//               .pipe(browserSync.reload({stream: true}));
+// });
 
-gulp.task("build-prod-js", () => {
-  return gulp.src("src/js/*.js")
-              .pipe(webpack({
-                  mode: 'production',
-                  output: {
-                      filename: 'script.js'
-                  },
-                  module: {
-                      rules: [
-                        {
-                          test: /\.m?js$/,
-                          exclude: /(node_modules|bower_components)/,
-                          use: {
-                            loader: 'babel-loader',
-                            options: {
-                              presets: [['@babel/preset-env', {
-                                  corejs: 3,
-                                  useBuiltIns: "usage"
-                              }]]
-                            }
-                          }
-                        }
-                      ]
-                    }
-              }))
-  .pipe(gulp.dest('build/js'))
-  .pipe(browserSync.reload({stream: true}));
+// gulp.task("build-prod-js", () => {
+//   return gulp.src("src/js/*.js")
+//               .pipe(webpack({
+//                   mode: 'production',
+//                   output: {
+//                       filename: 'script.js'
+//                   },
+//                   module: {
+//                       rules: [
+//                         {
+//                           test: /\.m?js$/,
+//                           exclude: /(node_modules|bower_components)/,
+//                           use: {
+//                             loader: 'babel-loader',
+//                             options: {
+//                               presets: [['@babel/preset-env', {
+//                                   corejs: 3,
+//                                   useBuiltIns: "usage"
+//                               }]]
+//                             }
+//                           }
+//                         }
+//                       ]
+//                     }
+//               }))
+//   .pipe(gulp.dest('build/js'))
+//   .pipe(browserSync.reload({stream: true}));
 
-});
+// });
 
 
 
 gulp.task('watch', function(){
     gulp.watch('src/*.html', gulp.series('html')),
-    gulp.watch('src/sass/style.scss', gulp.series("sass"), browserSync.reload),
-    gulp.watch(scripts, gulp.series('js')),  
-    gulp.watch("src/js/*.js", gulp.series('build-js')),  
-    gulp.watch("src/js/*.js", gulp.series('build-prod-js')),  
-    gulp.watch("src/img/**/*.{png,jpg}", gulp.series("images"))
+    gulp.watch(cssFiles, gulp.series("sass"), browserSync.reload),
+    gulp.watch(scripts, gulp.series('js')),
+    // gulp.watch(scripts, gulp.series('build-js')),  
+    // gulp.watch(scripts, gulp.series('build-prod-js')),  
+    gulp.watch("src/img/**/*.{png,jpg}", gulp.series("images")),
     gulp.watch("src/img/**/*.{png,jpg,svg}", gulp.series("allimg"))
   });
   
   gulp.task('default', gulp.series(
-    gulp.parallel('html','build-js', 'build-prod-js', 'sass', 'js','images', 'allimg'),
+    gulp.parallel('html','js', 'sass', 'images', 'allimg'),
     gulp.parallel('watch', 'serve' )
   ));
