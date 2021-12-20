@@ -16,8 +16,10 @@ $(document).ready(function(){
    
     $(".slider__items").slick({
         dots: false,
-        arrows: false,
+        prevArrow: '<button class="arrow__header prev__arrow-header"></button> ',
+        nextArrow: '<button class="arrow__header    next__arrow-header "></button>',
         infinite: true,
+        arrows: true,
         slidesToShow: 1,
         slidesToScroll: 1,
     })
