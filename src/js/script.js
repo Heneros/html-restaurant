@@ -15,13 +15,34 @@ $(document).ready(function(){
     });
    
     $(".slider__items").slick({
-        dots: false,
+        dots: false,     
         prevArrow: '<button class="arrow__header prev__arrow-header"></button> ',
         nextArrow: '<button class="arrow__header    next__arrow-header "></button>',
         infinite: true,
         arrows: true,
         slidesToShow: 1,
         slidesToScroll: 1,
+        // autoplay: true,
+        responsive:[
+            {
+                breakpoints: 1200,
+                settings:{ 
+                    centerMode: true, 
+                    // adaptiveHeight: true
+                }
+            },
+            {
+                breakpoints: 770,
+                settings:{ 
+                    centerMode: true,
+                    adaptiveHeight: true,
+                   centerPadding: '120px',
+                }
+            }
+
+        ]
+     
+
     })
 
 })
