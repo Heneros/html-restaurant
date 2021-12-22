@@ -537,9 +537,29 @@ body.menu-open {
 
 @media (max-width: 1280px) {
   header nav ul {
-    margin-left: -35px; }
+    margin-left: -35px; } }
+
+@media only screen and (max-width: 1562px) and (min-width: 1280px) {
   header::before {
-    width: 23% !important; } }
+    width: 30%; } }
+
+@media only screen and (max-width: 1289px) and (min-width: 1115px) {
+  header::before {
+    width: 30% !important; } }
+
+@media only screen and (max-width: 1115px) and (min-width: 900px) {
+  header::before {
+    width: 30% !important; } }
+
+@media only screen and (max-width: 1024px) and (min-width: 900px) {
+  header::before {
+    width: 36% !important;
+    right: -73px; } }
+
+@media only screen and (max-width: 900px) {
+  header::before {
+    right: -74px;
+    width: 36% !important; } }
 
 @media (max-width: 1185px) {
   header nav ul .nav__item {
@@ -590,9 +610,6 @@ body.menu-open {
   .nav__item a {
     color: #FFF5EC;
     font-size: 30px; }
-  header::before {
-    right: -74px;
-    width: 35%; }
   .header-nav .mobile__menu {
     display: block; }
   .burger-menu_active .burger-menu_lines {
@@ -778,8 +795,6 @@ body.menu-open {
     max-width: 400px; }
   .text__slider .search__btn {
     width: 22%; }
-  header::before {
-    width: 30%; }
   .prev__arrow-header::after,
   .next__arrow-header::before {
     bottom: 50px; } }
@@ -833,9 +848,11 @@ body.menu-open {
   .text__slider .search__food::placeholder {
     font-size: 15px; }
   .next__arrow-header::before {
-    bottom: 0px; }
+    bottom: 0px;
+    right: 165px; }
   .prev__arrow-header::after {
-    bottom: 0px; } }
+    bottom: 0px;
+    right: 80px; } }
 
 @media (max-width: 1068px) {
   .slider__block .slider {
@@ -922,17 +939,25 @@ body.menu-open {
 
 @media only screen and (max-width: 695px) and (min-width: 599px) {
   .slick-slide {
-    margin: 0px 48px; }
+    margin: 0px 70px; }
   .slider__block .slider {
-    min-width: calc(100% - 289px); }
+    min-width: calc(100% - 220px); }
   .slider__block .slider img {
     min-width: 250px;
-    -o-object-fit: contain;
-       object-fit: contain; } }
+    height: 406px; } }
 
-@media only screen and (max-width: 645px) and (min-width: 599px) {
-  .slider__block .slider {
-    margin-left: 83px; } }
+@media only screen and (max-width: 668px) and (min-width: 599px) {
+  .slider__block .slider img {
+    min-width: 280px; }
+  .slick-slide {
+    margin: 0px 91px; } }
+
+@media only screen and (max-width: 635px) and (min-width: 599px) {
+  .slider__block .slider img {
+    height: 369px;
+    min-width: 252px; }
+  .slick-slide {
+    margin: 0px 106px; } }
 
 .location {
   background: #35CD8C;

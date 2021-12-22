@@ -125,7 +125,8 @@
 }
 
 
-@media(max-width: 1562px) {
+
+@media(max-width: 1562px){
     .slider__block .slider {
         max-width: 667px;
         margin-left: 7%;
@@ -153,10 +154,7 @@
     .text__slider .search__btn{
         width: 22%;
     }
-    header::before{
-        // width: 457px;
-        width: 30%;
-    }
+ 
     .prev__arrow-header::after,
     .next__arrow-header::before {
         bottom: 50px;
@@ -218,11 +216,15 @@
     }
     .next__arrow-header::before{
         bottom: 0px;
+        right: 165px;
     }
     .prev__arrow-header::after{
         bottom: 0px;
+        right: 80px;
     }
-
+}
+@media only screen and (max-width: 1120px) and(min-width: 1000px){
+ 
 }
 @media (max-width: 1068px){
     .slider__block .slider {
@@ -234,8 +236,6 @@
         height: 556px;
     }
     .slider__block .slider__item::before{
-        // height: 86%;
-        // top: 82px;
         height: 86%;
         top: 74px;
         left: 32px;
@@ -251,9 +251,6 @@
 @media only screen and (max-width: 1010px) and (min-width: 738px){
     .text__slider {
         width: calc(100% - 500px);
-    }
-    .slider__block .slider img {
-        // min-width: 375px;
     }
 }
 @media (max-width: 965px){
@@ -347,20 +344,37 @@
 }
 @media only screen and (max-width: 695px) and (min-width: 599px){
     .slick-slide {
-        // margin: 0px 67px;
-        margin: 0px 48px;
+        margin: 0px 70px;
     }
     .slider__block .slider {
-        min-width: calc(100% - 289px);
+        // min-width: calc(100% - 289px);
+          min-width: calc(100% - 220px);
+     
     }
     .slider__block .slider img {
         min-width: 250px;
-        object-fit: contain;
+        height: 406px;
     } 
 }
-@media only screen and (max-width: 645px) and (min-width: 599px){
-    .slider__block .slider {
-        margin-left: 83px;
+@media only screen and (max-width: 668px) and (min-width: 599px){
+    .slider__block .slider img {
+        min-width: 280px;
+    } 
+    .slick-slide {
+        margin: 0px 91px;
     }
+    .slider__block .slider {
+        // min-width: calc(100% - 196px);
+    }
+}
+@media only screen and (max-width: 635px) and (min-width: 599px){
+    .slider__block .slider img {
+        height: 369px;
+        min-width: 252px;
+    } 
+    .slick-slide {
+        margin: 0px 106px;
+    }
+
 }
 
