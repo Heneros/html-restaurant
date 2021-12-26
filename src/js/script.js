@@ -38,6 +38,13 @@ $(document).ready(function(){
                     adaptiveHeight: true,
                    centerPadding: '120px',
                 }
+            }, {
+                breakpoints:599,
+                settings:{ 
+                    centerMode: true,
+                    adaptiveHeight: true,
+                   centerPadding: '200px',
+                }
             }
 
         ]
