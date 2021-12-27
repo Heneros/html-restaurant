@@ -313,13 +313,13 @@ body.menu-open{
     }
 }
 
-@media (min-width: 695px) {
+@media (max-width: 695px) {
     header::before {
-        right: -112px;
-        width: 47% !important;
+        // right: -112px;
+        // width: 47% !important;
     }
 }
-@media (min-width: 599px) {
+@media (max-width: 599px) {
     header::before{
         height: 1312px;
     }
