@@ -305,11 +305,7 @@ body.menu-open{
     direction: rtl;
     // right: 8px;
   }
-
-
 } 
-
-
 
 @media (min-width: 1024px){
     .mobile__menu{
@@ -317,3 +313,14 @@ body.menu-open{
     }
 }
 
+@media (min-width: 695px) {
+    header::before {
+        right: -112px;
+        width: 47% !important;
+    }
+}
+@media (min-width: 599px) {
+    header::before{
+        height: 1312px;
+    }
+}

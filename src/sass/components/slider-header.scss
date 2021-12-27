@@ -369,7 +369,8 @@
         margin-left: 130px;
     }
     .slider__block .slider {
-          min-width: calc(100% - 220px);
+        //   min-width: calc(100% - 220px);
+          min-width: calc(100% - 300px);
     }
     .slider__block .slider img {
         min-width: 250px;
@@ -383,10 +384,7 @@
         right: 0;
         bottom: -30px;
     }
-    header::before {
-        right: -112px;
-        width: 47% !important;
-    }
+
 
 }
 
@@ -427,7 +425,6 @@
         max-width: -webkit-fill-available;
         margin-bottom: 100px;
         width: auto;
-
 }
 .text__slider .search__btn {
     width: auto;
@@ -449,6 +446,7 @@
     width: 220px;
     left: -36px;
 }
+
 }
 
 
