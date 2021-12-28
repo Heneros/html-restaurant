@@ -1027,15 +1027,26 @@ body.menu-open {
   .text__slider .sub__title-slider {
     font-size: 36px;
     line-height: 32px; }
-  .text__slider .search__food {
-    max-width: 430px;
-    width: 430px; }
   .text__slider {
-    width: calc(100% - 220px); }
+    width: 85%;
+    max-width: 100%; }
   .text__slider .search__btn {
-    width: 44%;
-    right: 0;
-    left: 292px; } }
+    margin-left: 323px;
+    margin-top: -84px;
+    z-index: 99999999;
+    margin-right: 25px;
+    position: unset;
+    max-width: 100%;
+    width: 93px;
+    display: block; }
+  .text__slider .input__btn {
+    width: 440px;
+    max-width: calc(100% - 20px); }
+  .text__slider .search__food {
+    width: 430px;
+    max-width: 100%;
+    z-index: 0;
+    display: block; } }
 
 .location__adaptive {
   display: none;
