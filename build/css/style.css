@@ -1030,15 +1030,6 @@ body.menu-open {
   .text__slider {
     width: 85%;
     max-width: 100%; }
-  .text__slider .search__btn {
-    margin-left: 323px;
-    margin-top: -84px;
-    z-index: 99999999;
-    margin-right: 25px;
-    position: unset;
-    max-width: 100%;
-    width: 93px;
-    display: block; }
   .text__slider .input__btn {
     width: 440px;
     max-width: calc(100% - 20px); }
@@ -1046,7 +1037,66 @@ body.menu-open {
     width: 430px;
     max-width: 100%;
     z-index: 0;
-    display: block; } }
+    display: block; }
+  .container__btn-search {
+    max-width: calc(100% - 20px);
+    margin: 0 auto;
+    padding: 0 25px; }
+  .text__slider .search__btn {
+    background-color: #35CD8C;
+    border: none;
+    outline: none;
+    color: #FFF5EC;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 30px;
+    cursor: pointer;
+    height: 72px;
+    border-radius: 60px 0px 0px 0px;
+    display: block;
+    max-width: 100%;
+    margin: -82px auto auto 201px;
+    width: 46%;
+    position: unset; } }
+
+@media only screen and (max-width: 520px) and (min-width: 488px) {
+  .text__slider .search__btn {
+    width: 43%; } }
+
+@media only screen and (max-width: 488px) and (min-width: 456px) {
+  .text__slider .search__btn {
+    width: 38%; } }
+
+@media only screen and (max-width: 456px) and (min-width: 430px) {
+  .text__slider .search__btn {
+    width: 33%; } }
+
+@media only screen and (max-width: 430px) and (min-width: 412px) {
+  .text__slider .search__btn {
+    width: 29%;
+    font-size: 24px; } }
+
+@media only screen and (max-width: 412px) and (min-width: 396px) {
+  .text__slider .search__btn {
+    width: 25%;
+    font-size: 24px; } }
+
+@media only screen and (max-width: 396px) and (min-width: 383px) {
+  .text__slider .search__btn {
+    width: 21%;
+    font-size: 21px; } }
+
+@media only screen and (max-width: 383px) and (min-width: 370px) {
+  .text__slider .search__btn {
+    width: 27%;
+    font-size: 21px;
+    margin: -82px auto auto 180px; } }
+
+@media only screen and (max-width: 370px) and (min-width: 300px) {
+  .text__slider .search__btn {
+    width: 23%;
+    font-size: 21px;
+    margin: -82px auto auto 180px; } }
 
 .location__adaptive {
   display: none;
