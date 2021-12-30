@@ -305,6 +305,10 @@ body.menu-open{
     direction: rtl;
     // right: 8px;
   }
+  header .logo__header{
+    right: 43px;
+    position: relative;
+}
 } 
 
 @media (min-width: 1024px){
@@ -312,15 +316,40 @@ body.menu-open{
         display: none;
     }
 }
-
-@media (max-width: 695px) {
-    header::before {
-        // right: -112px;
-        // width: 47% !important;
-    }
-}
 @media (max-width: 599px) {
     header::before{
         height: 1312px;
+    }
+}
+@media(max-width: 435px){
+    header .logo__header{
+        font-size: 60px;
+    }
+
+}
+@media only screen and(max-width: 545px)and (min-width: 496px){
+    header::before{
+        width: 45% !important;
+    }
+}
+@media only screen and(max-width: 496px)and (min-width: 430px){
+    header::before{
+        width: 48% !important;
+    }
+}
+
+@media only screen and(max-width: 430px)and (min-width: 400px){
+    header::before{
+        width: 49% !important;
+    }
+}
+@media only screen and(max-width: 400px)and (min-width: 383px){
+    header::before{
+        width: 64% !important;
+    }
+}
+@media only screen and(max-width: 383px)and (min-width: 300px){
+    header::before{
+        width: 71% !important;
     }
 }
