@@ -338,18 +338,16 @@ body.menu-open{
     }
 }
 
-@media only screen and(max-width: 430px)and (min-width: 400px){
+@media only screen and(max-width: 430px)and (min-width: 383px){
     header::before{
         width: 49% !important;
     }
 }
-@media only screen and(max-width: 400px)and (min-width: 383px){
-    header::before{
-        width: 64% !important;
-    }
-}
 @media only screen and(max-width: 383px)and (min-width: 300px){
     header::before{
-        width: 71% !important;
+           width: 64% !important;
+    }
+    .logo__header {
+        font-size: 50px !important;
     }
 }

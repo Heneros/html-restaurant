@@ -4,7 +4,7 @@ border-radius: 0px 100px 100px 0px;
 max-width: 280px;
 height: 62px;
 position: relative;
-bottom: 116px;
+bottom: 202px;
     .location__name{
         color: #fff;
         font-weight: 500;
@@ -28,8 +28,13 @@ bottom: 116px;
 }
 @media(max-width: 1562px) {
  .location{
-     bottom: unset;
+     bottom: 102px;
  }
+}
+@media(max-width: 695px) {
+    .location{
+        bottom: 0;
+    }
 }
 @media(max-width: 599px) {
     .location{
