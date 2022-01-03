@@ -1,0 +1,62 @@
+.top__restaurant{
+ margin-top: 32px;
+}
+.text__description-restaurant{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  .title__description-restaurant{
+    flex: 1 1;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 62px;
+    text-transform: capitalize;
+    padding-right: 126px;
+    padding-left: 53px;
+    position: relative;
+    &::after{
+      content: "";
+      background-color: #35CD8C;
+      height: 126px;
+      width: 25px;
+      position: absolute;
+      left: 0px;
+      top: 0;
+    }
+  }
+  .paragraph__description-restaurant{
+    flex: 1;
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: capitalize;
+    color: #707070;
+    position: relative;
+    top: 32px;
+  }
+}      
+
+@media only screen and (max-width: 1686px) and(min-width: 300px){
+  .text__description-restaurant{
+    margin: 0 40px;
+  }
+}
+@media only screen and  (max-width: 999px){
+  .text__description-restaurant{
+    flex-direction: column;
+  }
+  .text__description-restaurant .title__description-restaurant{
+    padding-right: 0;
+  }
+  .text__description-restaurant .paragraph__description-restaurant{
+    top: 0;
+  }
+  .top__restaurant{
+    margin-top: 100px;
+  }
+}
+
+@media only screen and  (max-width: 695px){
+  .text__description-restaurant{
+    margin-top: 175px;
+  }
+}

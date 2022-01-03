@@ -2,7 +2,6 @@ header{
 max-height: 124px;
 display: flex;
 justify-content: space-between;
-// align-items: center;
 margin: 0 59px;
 nav{
     display: flex;
@@ -75,7 +74,8 @@ color: $green;
 &::before{
     content: "";
     width: 514px;
-    height: 1214px;
+    height: 1015px;
+    // height: 1214px;
     background-color: #35CD8C;
     position: absolute;
     z-index: -1;
@@ -349,5 +349,11 @@ body.menu-open{
     }
     .logo__header {
         font-size: 50px !important;
+    }
+}
+
+@media(max-width: 1289px){
+    header::before{
+        max-height: 900px;
     }
 }
