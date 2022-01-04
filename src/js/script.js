@@ -30,7 +30,7 @@ $(document).ready(function(){
                     centerMode: true, 
                     // adaptiveHeight: true
                 }
-            },
+            }, 
             {
                 breakpoints: 770,
                 settings:{ 
@@ -46,9 +46,14 @@ $(document).ready(function(){
                    centerPadding: '200px',
                 }
             }
-
         ]
-     
+    });
+    $(".dishes__slider").slick({
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        dots: false,
+        infinite: true,
+        prevArrow: '<button class="arrow__header prev__arrow-header"></button> ',
 
     })
 

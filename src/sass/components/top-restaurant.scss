@@ -60,3 +60,16 @@
     margin-top: 175px;
   }
 }
+
+@media only screen and  (max-width: 599px){
+  .text__description-restaurant .title__description-restaurant{
+    font-weight: 500;
+font-size: 36px;
+line-height: 48px;
+  }
+}
+@media only screen and  (max-width: 410px){
+  .text__description-restaurant {
+    margin-top: 250px;
+  }
+}

@@ -1,0 +1,15 @@
+.food__items{
+    max-width: 1420px;
+    margin-top: 78px;
+    margin-bottom: 150px;
+    .slick-initialized .slick-slide{
+        // margin: 0 3px;
+        margin: 0 -83px;
+    }
+    .food__item img{
+        // width: 685px;
+        width: 500px;
+        // max-height: 550px;
+    }
+
+}

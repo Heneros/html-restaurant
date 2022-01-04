@@ -352,8 +352,23 @@ body.menu-open{
     }
 }
 
-@media(max-width: 1289px){
+@media only screen and (max-width: 1289px) and(min-width: 599px){
     header::before{
         max-height: 900px;
+    }
+}
+@media only screen and (max-width: 599px) and(min-width: 300px){
+    header::before{
+        max-height: 1320px;
+    }
+}
+@media only screen and (max-width: 500px) and(min-width: 410px){
+    header::before{
+        max-height: 1210px;
+    }
+}
+@media only screen and (max-width: 410px) and(min-width: 300px){
+    header::before{
+        max-height: 1210px;
     }
 }

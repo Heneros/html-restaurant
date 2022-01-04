@@ -1,0 +1,3 @@
+Minor Bugs to fix:
+     Menu adaptive half not showing
+     Adaptive btn in slider header half working hover
