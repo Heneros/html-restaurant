@@ -1454,12 +1454,51 @@ body.menu-open {
 
 .food__items {
   max-width: 1420px;
-  margin-top: 78px;
-  margin-bottom: 150px; }
+  margin-top: 78px; }
   .food__items .slick-initialized .slick-slide {
     margin: 0 -83px; }
+  .food__items .food__item {
+    max-width: 500px; }
   .food__items .food__item img {
     width: 500px; }
+  .food__items .text__food-item {
+    position: relative;
+    bottom: 216px;
+    padding: 31px 45px;
+    background-color: rgba(53, 205, 140, 0.5);
+    color: #FFFFFF; }
+    .food__items .text__food-item .title__food-item {
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 24px; }
+    .food__items .text__food-item .paragraph__food-item {
+      font-size: 14px;
+      line-height: 24px; }
+    .food__items .text__food-item .location__food-item {
+      font-size: 14px;
+      line-height: 24px;
+      left: 20px;
+      position: relative; }
+      .food__items .text__food-item .location__food-item::before {
+        content: "";
+        background-image: url("../img/location.svg");
+        width: 20px;
+        height: 25px;
+        position: absolute;
+        bottom: -1px;
+        left: -24px; }
+    .food__items .text__food-item .btn__book-now {
+      background: #FFFFFF;
+      border-radius: 100px 0px 0px 100px;
+      color: #35CD8C;
+      width: 208px;
+      height: 58px;
+      opacity: 1;
+      position: relative;
+      left: 161px;
+      cursor: pointer;
+      border: unset;
+      outline: none; }
 
 /* Slider */
 .slick-slider {

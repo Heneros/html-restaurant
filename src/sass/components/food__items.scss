@@ -1,15 +1,64 @@
 .food__items{
     max-width: 1420px;
     margin-top: 78px;
-    margin-bottom: 150px;
+    // margin-bottom: 150px;
     .slick-initialized .slick-slide{
         // margin: 0 3px;
         margin: 0 -83px;
+    }
+    .food__item {
+        max-width: 500px;
     }
     .food__item img{
         // width: 685px;
         width: 500px;
         // max-height: 550px;
     }
-
+    .text__food-item{
+        position: relative;
+        bottom: 216px;
+        padding: 31px 45px;
+        // opacity: .8;
+        // background-color: $green;
+        background-color:  rgba(53, 205, 140, .5);
+        color: #FFFFFF;
+        .title__food-item{
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 24px;
+        }
+        .paragraph__food-item{
+            font-size: 14px;
+            line-height: 24px;
+        }
+        .location__food-item{
+            font-size: 14px;
+            line-height: 24px;
+            left: 20px;
+            position: relative;
+            &::before{
+                content: "";
+                background-image: url('../img/location.svg');
+                width: 20px;
+                height: 25px;
+                position: absolute;
+                bottom: -1px;
+                left: -24px;
+            }
+        }
+        .btn__book-now{
+        background: #FFFFFF;
+        border-radius: 100px 0px 0px 100px;
+        color: $green;
+        width: 208px;
+        height: 58px;
+        opacity: 1;
+        position: relative;
+        left: 161px;
+        cursor: pointer;
+        // margin-left: 248px;
+        border: unset;
+        outline: none;
+        }
+    }
 }
