@@ -2,12 +2,41 @@
     max-width: 1420px;
     margin-top: 78px;
     // margin-bottom: 150px;
+
     .slick-initialized .slick-slide{
         // margin: 0 3px;
         margin: 0 -83px;
     }
+//     .slick-slide[data-slick-index="1"]::before {
+//         content: "";
+//       background-image: url('../img/dots-dish.svg');
+//       position: absolute;
+//       height: 386px;
+//       width: 316px;
+//       z-index: -1;
+//     //   top: 146px;
+//       left: 137px;
+//       display: block;
+// }
+
+    
+            // content: "";
+            // background-image: url('../img/dots-dish.svg');
+            // position: absolute;
+            // height: 386px;
+            // width: 316px;
+            // z-index: -1;
+            // top: 146px;
+            // right: -24px;
+            // display: block;
+            .slick-slide .food__item:nth-child(2n){
+                display: none;
+
+            }
     .food__item {
         max-width: 500px;
+        position: relative;
+    
     }
     .food__item img{
         // width: 685px;
@@ -18,10 +47,9 @@
         position: relative;
         bottom: 216px;
         padding: 31px 45px;
-        // opacity: .8;
-        // background-color: $green;
         background-color:  rgba(53, 205, 140, .5);
         color: #FFFFFF;
+        border-radius: 0 0 26px 26px;
         .title__food-item{
         font-weight: bold;
         font-size: 24px;
@@ -60,5 +88,49 @@
         border: unset;
         outline: none;
         }
+    
     }
+    .prev__arrow-slider{
+        border: none;
+        outline: none;
+    }
+    .prev__arrow-slider::before{
+content: "";
+background-image: url('../img/arrow-dishes.svg');
+background-repeat: no-repeat;
+position: absolute;
+display: block;
+width: 98px;
+height: 40px;
+right: -250px;
+top: 236px;
+bottom: 0;
+z-index: 9999;
+cursor: pointer;
+    }
+}
+// .slick-active .food__item:nth-child(odd)::before{
+//                 content: "";
+//                 background-image: url('../img/dots-dish.svg');
+//                 position: absolute;
+//                 height: 386px;
+//                 width: 316px;
+//                 z-index: -1;
+//                 top: 146px;
+//                 right: -24px;
+//                 display: block;
+// }
+.dishes__slider .slick-slide{
+ position: relative !important;
+}
+.dishes__slider .slick-slide:nth-child(even)::before{
+    content: "";
+  background-image: url('../img/dots-dish.svg');
+  position: absolute;
+  height: 386px;
+  width: 316px;
+  z-index: -1;
+  left: 213px;
+  top: 140px;
+  display: block;
 }

@@ -52,9 +52,9 @@ $(document).ready(function(){
         slidesToShow: 2,
         slidesToScroll: 1,
         dots: false,
-        infinite: true,
-        prevArrow: '<button class="arrow__header prev__arrow-header"></button> ',
-
+        infinite: false,
+        prevArrow: '<button class="arrow__header prev__arrow-slider"></button> ',
+        nextArrow: '',
     })
 
 })
