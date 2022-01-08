@@ -1,52 +1,47 @@
 .food__items{
     max-width: 1420px;
     margin-top: 78px;
-    // margin-bottom: 150px;
-
     .slick-initialized .slick-slide{
-        // margin: 0 3px;
-        margin: 0 -83px;
+        // margin: 0 -83px;
     }
-//     .slick-slide[data-slick-index="1"]::before {
-//         content: "";
-//       background-image: url('../img/dots-dish.svg');
-//       position: absolute;
-//       height: 386px;
-//       width: 316px;
-//       z-index: -1;
-//     //   top: 146px;
-//       left: 137px;
-//       display: block;
-// }
-
-    
-            // content: "";
-            // background-image: url('../img/dots-dish.svg');
-            // position: absolute;
-            // height: 386px;
-            // width: 316px;
-            // z-index: -1;
-            // top: 146px;
-            // right: -24px;
-            // display: block;
-            .slick-slide .food__item:nth-child(2n){
-                display: none;
-
-            }
     .food__item {
         max-width: 500px;
         position: relative;
-    
+    }
+    .dishes__slider .slick-slide:nth-child(even)::before{
+        content: "";
+      background-image: url('../img/dots-dish.svg');
+      position: absolute;
+      height: 386px;
+      width: 316px;
+      z-index: -1;
+    //   left: 213px;
+    // top: 213px;
+    left: 353px;
+    top: 344px;
+      display: block;
+    }
+    .dishes__slider .slick-slide:nth-child(odd)::before{
+        content: "";
+      background-image: url('../img/dots-top.svg');
+      background-repeat: no-repeat;
+      position: absolute;
+      height: 49px;
+      width: 315px;
+      z-index: -1;
+      top: 0;
+      display: block;
     }
     .food__item img{
-        // width: 685px;
-        width: 500px;
-        // max-height: 550px;
+        // width: 500px;
+        width: 638px;
+        margin-top: 61px;
     }
     .text__food-item{
         position: relative;
         bottom: 216px;
-        padding: 31px 45px;
+        padding: 30px 45px;
+        width: 550px;
         background-color:  rgba(53, 205, 140, .5);
         color: #FFFFFF;
         border-radius: 0 0 26px 26px;
@@ -82,13 +77,12 @@
         height: 58px;
         opacity: 1;
         position: relative;
-        left: 161px;
+        // left: 161px;
+        left: 303px;
         cursor: pointer;
-        // margin-left: 248px;
         border: unset;
         outline: none;
         }
-    
     }
     .prev__arrow-slider{
         border: none;
@@ -103,34 +97,15 @@ display: block;
 width: 98px;
 height: 40px;
 right: -250px;
-top: 236px;
+
+// top: 303px;
+top: 408px;
 bottom: 0;
 z-index: 9999;
 cursor: pointer;
     }
 }
-// .slick-active .food__item:nth-child(odd)::before{
-//                 content: "";
-//                 background-image: url('../img/dots-dish.svg');
-//                 position: absolute;
-//                 height: 386px;
-//                 width: 316px;
-//                 z-index: -1;
-//                 top: 146px;
-//                 right: -24px;
-//                 display: block;
-// }
+
 .dishes__slider .slick-slide{
  position: relative !important;
-}
-.dishes__slider .slick-slide:nth-child(even)::before{
-    content: "";
-  background-image: url('../img/dots-dish.svg');
-  position: absolute;
-  height: 386px;
-  width: 316px;
-  z-index: -1;
-  left: 213px;
-  top: 140px;
-  display: block;
 }
