@@ -3,6 +3,8 @@
     margin-top: 78px;
     .slick-initialized .slick-slide{
         // margin: 0 -83px;
+        position: relative !important;
+        margin: 0 3px;
     }
     .food__item {
         max-width: 500px;
@@ -106,6 +108,18 @@ cursor: pointer;
     }
 }
 
-.dishes__slider .slick-slide{
- position: relative !important;
+@media only screen and(max-width: 1750px) and (min-width: 1650px){
+    .food__items .prev__arrow-slider::before{
+        right: -150px;
+    }
+}
+@media only screen and(max-width: 1650px) and (min-width: 300px){
+    .food__items .prev__arrow-slider::before{
+        right: -100px;
+    }
+}
+@media only screen and(max-width: 1500px) and (min-width: 300px){
+    .food__items .prev__arrow-slider::before{
+        right: -60px;
+    }
 }

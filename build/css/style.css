@@ -1455,6 +1455,9 @@ body.menu-open {
 .food__items {
   max-width: 1420px;
   margin-top: 78px; }
+  .food__items .slick-initialized .slick-slide {
+    position: relative !important;
+    margin: 0 3px; }
   .food__items .food__item {
     max-width: 500px;
     position: relative; }
@@ -1538,8 +1541,17 @@ body.menu-open {
     z-index: 9999;
     cursor: pointer; }
 
-.dishes__slider .slick-slide {
-  position: relative !important; }
+@media only screen and (max-width: 1750px) and (min-width: 1650px) {
+  .food__items .prev__arrow-slider::before {
+    right: -150px; } }
+
+@media only screen and (max-width: 1650px) and (min-width: 300px) {
+  .food__items .prev__arrow-slider::before {
+    right: -100px; } }
+
+@media only screen and (max-width: 1500px) and (min-width: 300px) {
+  .food__items .prev__arrow-slider::before {
+    right: -60px; } }
 
 /* Slider */
 .slick-slider {
