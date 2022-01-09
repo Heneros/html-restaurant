@@ -1,29 +1,19 @@
 .food__items{
     max-width: 1420px;
     margin-top: 78px;
-    .slick-initialized .slick-slide{
-        // margin: 0 -83px;
-        position: relative !important;
-        margin: 0 3px;
-    }
     .food__item {
         max-width: 500px;
         position: relative;
+        &:first-child{
+            margin-right: 191px;
+        }
     }
-    .dishes__slider .slick-slide:nth-child(even)::before{
-        content: "";
-      background-image: url('../img/dots-dish.svg');
-      position: absolute;
-      height: 386px;
-      width: 316px;
-      z-index: -1;
-    //   left: 213px;
-    // top: 213px;
-    left: 353px;
-    top: 344px;
-      display: block;
+    .dishes__block{
+        display: flex;
+
     }
-    .dishes__slider .slick-slide:nth-child(odd)::before{
+
+    .dishes__block .food__item:first-child::before{
         content: "";
       background-image: url('../img/dots-top.svg');
       background-repeat: no-repeat;
@@ -32,8 +22,22 @@
       width: 315px;
       z-index: -1;
       top: 0;
+      left: 36px;
       display: block;
     }
+    .dishes__block .food__item:last-child:before{
+        content: "";
+        background-image: url('../img/dots-dish.svg');
+        position: absolute;
+        height: 386px;
+        width: 316px;
+        z-index: -1;
+      //   left: 213px;
+      // top: 213px;
+        left: 353px;
+        top: 344px;
+        display: block;
+      }
     .food__item img{
         // width: 500px;
         width: 638px;
@@ -42,7 +46,7 @@
     .text__food-item{
         position: relative;
         bottom: 216px;
-        padding: 30px 45px;
+        padding: 26px 45px;
         width: 550px;
         background-color:  rgba(53, 205, 140, .5);
         color: #FFFFFF;
@@ -79,47 +83,190 @@
         height: 58px;
         opacity: 1;
         position: relative;
-        // left: 161px;
         left: 303px;
         cursor: pointer;
         border: unset;
         outline: none;
         }
     }
-    .prev__arrow-slider{
-        border: none;
-        outline: none;
+    .arrow__see-more {
+        position: relative;
+        img{
+            position: absolute;
+            right: -180px;
+            bottom: 436px;
+        }
     }
-    .prev__arrow-slider::before{
-content: "";
-background-image: url('../img/arrow-dishes.svg');
-background-repeat: no-repeat;
-position: absolute;
-display: block;
-width: 98px;
-height: 40px;
-right: -250px;
+}
+// .food__items::before{
+//     content: "";
+//     background-image: url('../img/arrow-dishes.svg');
+//     background-repeat: no-repeat;
+//     position: absolute;
+//     display: block;
+//     width: 98px;
+//     height: 40px;
 
-// top: 303px;
-top: 408px;
-bottom: 0;
-z-index: 9999;
-cursor: pointer;
-    }
-}
+//     z-index: 9999;
+//     cursor: pointer;
+// }
+// @media only screen and(max-width: 1750px) and (min-width: 1650px){
+//     .food__items .prev__arrow-slider::before{
+//         right: -150px;
+//     }
+// }
+// @media only screen and(max-width: 1650px) and (min-width: 300px){
+//     .food__items .prev__arrow-slider::before{
+//         right: -100px;
+//     }
+//     // .food__items .food__item img{
+//     //     max-width: 100%;
+//     // }
+// }
+// @media only screen and(max-width: 1500px) and (min-width: 300px){
+//     .food__items .prev__arrow-slider::before{
+//         right: -60px;
+//     }
+// }
 
-@media only screen and(max-width: 1750px) and (min-width: 1650px){
-    .food__items .prev__arrow-slider::before{
-        right: -150px;
-    }
-}
-@media only screen and(max-width: 1650px) and (min-width: 300px){
-    .food__items .prev__arrow-slider::before{
-        right: -100px;
-    }
-}
-@media only screen and(max-width: 1500px) and (min-width: 300px){
-    .food__items .prev__arrow-slider::before{
-        right: -60px;
-    }
-}
+// @media only screen and(max-width: 1540px) and (min-width: 1395px){
+//     .food__items .food__item img{
+//         width: 500px;
+//     }
+//     .food__items .text__food-item{
+//         max-width: 411px;
+//      }
+//     .food__items .prev__arrow-slider::before{
+//         right: -150px;
+//         top: 319px;
+//     }
+//     .food__items .dishes__slider .slick-slide:nth-child(even)::before{
+//         left: 215px;
+//         top: 203px;
+//     }
+//     .food__items .text__food-item .btn__book-now{
+//         left: 162px;
+//     }
+//     .food__items .slick-initialized .slick-slide{
+//         // margin: 0 -75px;
+//     }
+//     .dishes__slider {
+//         max-width: 80%;
+//     }
+// }
+// @media only screen and(max-width: 1395px) and (min-width: 1255px){
+//     .food__items .food__item img{
+//         width: 450px;
+//     }
+//     .food__items .text__food-item{
+//         max-width: 360px;
+//     }
+//     .food__items .text__food-item .btn__book-now{
+//         left: 111px;
+//     }
+//     .food__items .prev__arrow-slider::before{
+//         right: -150px;
+//         top: 270px;
+//     }
+//     .food__items .dishes__slider .slick-slide:nth-child(even)::before{
+//         left: 168px;
+//         top: 156px;
+//     }
+//     .food__items .slick-initialized .slick-slide{
+//         // margin: 0 -75px;
+//     }
+//     .dishes__slider {
+//         max-width: 80%;
+//     }
+    
+// }
+// @media only screen and(max-width: 1255px) and (min-width: 1154px){
+//     .food__items .food__item img{
+//         width: 425px;
+//     }
+//     .food__items .text__food-item{
+//         max-width: 335px;
+//     }
+//     .food__items .text__food-item .btn__book-now{
+//         left: 113px;
+//     }
+//     .food__items .prev__arrow-slider::before{
+//         right: -150px;
+//         top: 270px;
+//     }
+//     .food__items .dishes__slider .slick-slide:nth-child(even)::before{
+//         left: 131px;
+//         top: 130px;
+//     }
+//     .food__items .slick-initialized .slick-slide{
+//         // margin: 0 -75px;
+//     }
+//     .dishes__slider {
+//         max-width: 80%;
+//     }
+//     .food__items .text__food-item .btn__book-now{
+//         width: 182px;
+//     }
+// }
+// @media only screen and(max-width: 1154px) and (min-width: 1070px){
+//     .food__items .food__item img{
+//         width: 388px;
+//     }
+//     .food__items .text__food-item{
+//         max-width: 299px;
+//     }
+//     .food__items .text__food-item .btn__book-now{
+//         left: 108px;
+//     }
+//     .food__items .prev__arrow-slider::before{
+//         right: -150px;
+//         top: 270px;
+//     }
+//     .food__items .dishes__slider .slick-slide:nth-child(even)::before {
+//         left: 98px;
+//         top: 94px;
+//     }
+//     .food__items .slick-initialized .slick-slide{
+//         // margin: 0 -75px;
+//     }
+//     .dishes__slider {
+//         max-width: 80%;
+//     }
+//     .food__items .text__food-item .btn__book-now{
+//         width: 150px;
+//     }
+//     .food__items .text__food-item {
+//         padding: 17px 44px;
+//     }
+// }
+// @media only screen and(max-width: 1070px) and (min-width: 300px){
+//     .food__items .food__item img{
+//         width: 388px;
+//     }
+//     .food__items .text__food-item{
+//         max-width: 299px;
+//     }
+//     .food__items .text__food-item .btn__book-now{
+//         left: 108px;
+//     }
+//     .food__items .prev__arrow-slider::before{
+//         right: -150px;
+//         top: 270px;
+//     }
+//     .food__items .dishes__slider .slick-slide:nth-child(even)::before {
+//         left: 98px;
+//         top: 94px;
+//     }
+//     .food__items .slick-initialized .slick-slide{
+//         // margin: 0 -75px;
+//     }
+//     .dishes__slider {
+//         max-width: 80%;
+//     }
+//     .food__items .text__food-item .btn__book-now{
+//         width: 150px;
+//     }
+//     .food__items .text__food-item {
+//         padding: 17px 44px;
+//     }
+// }

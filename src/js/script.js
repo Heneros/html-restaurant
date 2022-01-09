@@ -48,13 +48,15 @@ $(document).ready(function(){
             }
         ]
     });
-    $(".dishes__slider").slick({
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        dots: false,
-        infinite: true,
-        prevArrow: '<button class="arrow__header prev__arrow-slider"></button> ',
-        nextArrow: '',
-    })
+
+
+    // $(".dishes__slider").slick({
+    //     slidesToShow: 2,
+    //     slidesToScroll: 1,
+    //     dots: false,
+    //     infinite: true,
+    //     prevArrow: '<button class="arrow__header prev__arrow-slider"></button> ',
+    //     nextArrow: '',
+    // });
 
 })
