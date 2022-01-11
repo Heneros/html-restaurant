@@ -3,3 +3,5 @@ Minor Bugs to fix:
      Adaptive btn in slider header half working hover
      Poineter property add to arrows
      Hover to arrows
+     > 999px header slider increase width image item
+     > 700px .input__btn increase width

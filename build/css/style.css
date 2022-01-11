@@ -1603,7 +1603,20 @@ body.menu-open {
   .food__item:last-child .text__food-item .btn__book-now {
     left: 105px; } }
 
-@media only screen and (max-width: 1100px) and (min-width: 300px) {
+@media only screen and (max-width: 1100px) {
+  .food__items .arrow__see-more {
+    position: relative; }
+    .food__items .arrow__see-more::after {
+      content: "See More";
+      display: block;
+      position: absolute;
+      top: 180px;
+      right: 0;
+      font-size: 14px;
+      line-height: 24px;
+      color: #35CD8C; } }
+
+@media only screen and (max-width: 1100px) and (min-width: 999px) {
   .food__items .arrow__see-more img {
     right: 0px;
     top: 114px; }
@@ -1623,6 +1636,115 @@ body.menu-open {
     width: 153px; }
   .food__item:last-child .text__food-item .btn__book-now {
     left: 105px; } }
+
+@media (max-width: 999px) {
+  .food__items .text__food-item .location__food-item::before {
+    display: none; } }
+
+@media only screen and (max-width: 999px) and (min-width: 896px) {
+  .food__items .arrow__see-more img {
+    right: 0px;
+    top: 114px;
+    width: 70px; }
+  .food__items .food__item img {
+    width: 370px; }
+  .food__items .text__food-item {
+    width: 280px;
+    bottom: 179px;
+    max-height: 162px;
+    padding: 8px 46px; }
+  .food__items .food__item {
+    max-width: 160px; }
+  .food__items .dishes__block .food__item:last-child:before {
+    left: 116px;
+    top: 110px; }
+  .food__items .text__food-item .btn__book-now {
+    left: 87px;
+    width: 153px;
+    bottom: 38px;
+    max-height: 50px; }
+  .food__item:last-child .text__food-item .btn__book-now {
+    left: 81px; }
+  .food__items .food__item:first-child {
+    margin-right: 223px; } }
+
+@media only screen and (max-width: 896px) and (min-width: 718px) {
+  .food__items .text__food-item {
+    width: 208px;
+    bottom: 179px;
+    max-height: 162px;
+    padding: 8px 46px; }
+  .food__items .food__item:first-child {
+    margin-right: 157px; }
+  .food__items .arrow__see-more img {
+    right: 0px;
+    top: 114px;
+    width: 70px; }
+  .food__items .food__item img {
+    width: 300px; }
+  .food__items .food__item {
+    max-width: 160px; }
+  .food__items .dishes__block .food__item:last-child:before {
+    left: 48px;
+    top: 53px; }
+  .food__items .text__food-item .btn__book-now {
+    left: 103px;
+    width: 153px;
+    bottom: 63px;
+    max-height: 41px; }
+  .food__item:last-child .text__food-item .btn__book-now {
+    left: 102px;
+    bottom: 63px;
+    max-height: 41px; }
+  .food__items .text__food-item .location__food-item::before {
+    display: none; }
+  .food__items .text__food-item .paragraph__food-item {
+    font-size: 13px;
+    line-height: 24px; }
+  .food__items .dishes__block .food__item:first-child::before {
+    width: 264px; } }
+
+@media (max-width: 768px) {
+  .food__items .dishes__block .food__item:last-child:before {
+    left: 7px; } }
+
+@media only screen and (max-width: 718px) and (min-width: 300px) {
+  .food__items .text__food-item {
+    width: 237px;
+    bottom: 179px;
+    max-height: 162px;
+    padding: 8px 5px; }
+  .food__items .food__item:first-child {
+    margin-right: 96px; }
+  .food__items .arrow__see-more img {
+    right: 0px;
+    top: 114px;
+    width: 70px; }
+  .food__items .food__item img {
+    width: 247px; }
+  .food__items .food__item {
+    max-width: 160px; }
+  .food__items .text__food-item .btn__book-now {
+    left: 46px;
+    width: 110px;
+    bottom: 31px;
+    max-height: 41px; }
+  .food__item:last-child .text__food-item .btn__book-now {
+    left: 40px;
+    bottom: 31px;
+    max-height: 41px;
+    width: 110px; }
+  .food__items .text__food-item .location__food-item::before {
+    display: none; }
+  .food__items .text__food-item .paragraph__food-item {
+    font-size: 13px;
+    line-height: 24px; }
+  .food__items .text__food-item .title__food-item {
+    font-size: 20px; }
+  .food__items .dishes__block .food__item:first-child::before {
+    width: 211px; }
+  .food__items .dishes__block .food__item:last-child:before {
+    display: none; } }
 
 /* Slider */
 .slick-slider {
