@@ -332,7 +332,7 @@
     }
 }
 
-@media only screen and (max-width: 718px) and(min-width: 300px){
+@media only screen and (max-width: 718px) and(min-width: 599px){
     .food__items .text__food-item {
         width: 237px;
         bottom: 179px;
@@ -384,6 +384,67 @@
     }
 }
 
-@media only screen and (max-width: 718px) and(min-width: 300px){
-
+@media only screen and (max-width: 599px){
+    .food__items .dishes__block{
+        flex-direction: column;
+        margin: 0 35px;
+        max-width: 1200px;
+        max-height: 909px;
+    }
+    .food__items .food__item img {
+        width: 100%;
+    }
+    .food__items .food__item {
+        max-width: 550px;
+    }
+    .food__items .text__food-item {
+        width: auto;
+        bottom: 180px;
+        max-height: 162px;
+        padding: 8px 63px;
+    }
+    .food__items .food__item:first-child{
+        margin: 25px 0px;
+    }
+    .food__items .arrow__see-more {
+        top: 133px;
+        right: 229px;
+    }
+    .food__items .arrow__see-more img{
+        right: 0px;
+        top: 114px;
+        width: 70px;
+    }
+    .food__items .text__food-item .btn__book-now {
+        left: 46px;
+        width: 208px;
+        bottom: 31px;
+        height: 44px;
+        margin-left: 194px;
+    }
+    .food__item:last-child .text__food-item .btn__book-now{
+        left: 46px;
+        width: 208px;
+        bottom: 31px;
+        height: 44px;
+        margin-left: 194px;
+    }
+    .food__items .text__food-item .location__food-item::before{
+        display: none;
+    }
+    .food__items .text__food-item .paragraph__food-item {
+        font-size: 13px;
+        line-height: 24px;
+    }
+    .food__items .text__food-item .title__food-item {
+        font-size: 20px;
+    }
+    .food__items .dishes__block .food__item:first-child::before{
+        width: 211px;
+    }
+    .food__items .dishes__block .food__item:last-child:before{
+        display: block;
+        left: 189px;
+    top: 192px;
+    }
 }
