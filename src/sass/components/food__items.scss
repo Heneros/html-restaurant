@@ -1,6 +1,7 @@
 .food__items{
     max-width: 1420px;
     margin: 78px 0;
+    position: relative;
     
     .food__item {
         max-width: 500px;
@@ -12,11 +13,11 @@
     }
     .dishes__block{
         display: flex;
-        max-height: 100px;
+        // max-height: 100px;
     }
 
     .dishes__block .food__item:first-child::before{
-        content: "";
+      content: "";
       background-image: url('../img/dots-top.svg');
       background-repeat: no-repeat;
       position: absolute;
@@ -92,7 +93,10 @@
         }
     }
     .arrow__see-more {
-        position: relative;
+        // position: relative;
+        position: absolute;
+        top: 0;
+        right: 0;
         img{
             position: absolute;
             right: -180px;
@@ -104,6 +108,9 @@
 }
 .food__item:last-child .text__food-item .btn__book-now{
     left: 295px;
+}
+.mobile__see-more{
+  display: none;
 }
 
 
@@ -519,15 +526,24 @@
     }
     .food__items .text__food-item{
         top: 254px;
+        border-radius: 0 0 14px 14px;
     }
     .food__items .dishes__block{
         max-height: 849px;
+    }
+    .food__items .text__food-item .btn__book-now{
+
+        margin-top: 0px;
+    }
+}
+@media(max-width: 401px){
+    .food__items .text__food-item .btn__book-now {
+        margin-top: -12px;
     }
 }
 @media(max-width: 395px){
     .food__items .text__food-item .btn__book-now{
         width: 153px;
-        margin-top: -27px;
     }
     .food__item:last-child .text__food-item .btn__book-now
     {

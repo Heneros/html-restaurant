@@ -5,3 +5,4 @@ Minor Bugs to fix:
      Hover to arrows
      > 999px header slider increase width image item
      > 700px .input__btn increase width
+     button in header slider. move it higher 

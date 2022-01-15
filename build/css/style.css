@@ -1454,7 +1454,8 @@ body.menu-open {
 
 .food__items {
   max-width: 1420px;
-  margin: 78px 0; }
+  margin: 78px 0;
+  position: relative; }
   .food__items .food__item {
     max-width: 500px;
     max-height: 500px;
@@ -1464,8 +1465,7 @@ body.menu-open {
   .food__items .dishes__block {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
-    max-height: 100px; }
+    display: flex; }
   .food__items .dishes__block .food__item:first-child::before {
     content: "";
     background-image: url("../img/dots-top.svg");
@@ -1531,7 +1531,9 @@ body.menu-open {
       border: unset;
       outline: none; }
   .food__items .arrow__see-more {
-    position: relative; }
+    position: absolute;
+    top: 0;
+    right: 0; }
     .food__items .arrow__see-more img {
       position: absolute;
       right: -180px;
@@ -1540,6 +1542,9 @@ body.menu-open {
 
 .food__item:last-child .text__food-item .btn__book-now {
   left: 295px; }
+
+.mobile__see-more {
+  display: none; }
 
 @media only screen and (max-width: 1605px) and (min-width: 1381px) {
   .food__items .arrow__see-more img {
@@ -1858,16 +1863,60 @@ body.menu-open {
   .food__items .food__item img {
     height: 365px; }
   .food__items .text__food-item {
-    top: 254px; }
+    top: 254px;
+    border-radius: 0 0 14px 14px; }
   .food__items .dishes__block {
-    max-height: 849px; } }
+    max-height: 849px; }
+  .food__items .text__food-item .btn__book-now {
+    margin-top: 0px; } }
+
+@media (max-width: 401px) {
+  .food__items .text__food-item .btn__book-now {
+    margin-top: -12px; } }
 
 @media (max-width: 395px) {
   .food__items .text__food-item .btn__book-now {
-    width: 153px;
-    margin-top: -27px; }
+    width: 153px; }
   .food__item:last-child .text__food-item .btn__book-now {
     width: 153px; } }
+
+.wrapper__advance-booking {
+  margin-top: 325px;
+  background-color: #FFEDDE;
+  width: 100%;
+  height: 950px;
+  position: relative; }
+
+.advance__booking {
+  position: relative;
+  width: 100%; }
+  .advance__booking .block-advance__booking {
+    max-width: 1230px;
+    height: 560px;
+    position: absolute;
+    top: 215px;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    margin: 0 auto; }
+  .advance__booking .salad__img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top: 194px; }
+    .advance__booking .salad__img img {
+      width: 324px;
+      height: 620px;
+      -o-object-fit: contain;
+         object-fit: contain; }
+  .advance__booking .lettuce__img {
+    position: absolute;
+    left: 0;
+    top: -191px;
+    z-index: 999; }
+    .advance__booking .lettuce__img img {
+      height: 1296px;
+      width: 660px; }
 
 /* Slider */
 .slick-slider {
