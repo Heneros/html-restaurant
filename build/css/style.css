@@ -1917,6 +1917,156 @@ body.menu-open {
     .advance__booking .lettuce__img img {
       height: 1296px;
       width: 660px; }
+  .advance__booking .form__booking-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 11% 0; }
+    .advance__booking .form__booking-text h2 {
+      font-weight: 500;
+      font-size: 36px;
+      line-height: 24px;
+      color: #2E266F;
+      margin-bottom: 60px; }
+      .advance__booking .form__booking-text h2::before {
+        content: "";
+        width: 230px;
+        height: 15px;
+        position: relative;
+        display: block;
+        background: #35CD8C;
+        margin: 0 auto;
+        bottom: 35px; }
+    .advance__booking .form__booking-text .form__search-booking input {
+      width: 544px;
+      outline: none;
+      border: none;
+      background-color: #fff; }
+      .advance__booking .form__booking-text .form__search-booking input::-webkit-input-placeholder {
+        color: #2E266F;
+        opacity: .5; }
+      .advance__booking .form__booking-text .form__search-booking input::-moz-placeholder {
+        color: #2E266F;
+        opacity: .5; }
+      .advance__booking .form__booking-text .form__search-booking input:-ms-input-placeholder {
+        color: #2E266F;
+        opacity: .5; }
+      .advance__booking .form__booking-text .form__search-booking input::-ms-input-placeholder {
+        color: #2E266F;
+        opacity: .5; }
+      .advance__booking .form__booking-text .form__search-booking input::placeholder {
+        color: #2E266F;
+        opacity: .5; }
+    .advance__booking .form__booking-text .form__search-booking .btn__search-form {
+      width: 128px;
+      height: 62px;
+      background-color: #35CD8C;
+      color: #fff;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 30px;
+      text-transform: uppercase; }
+    .advance__booking .form__booking-text .schedule__block {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      margin-top: 70px; }
+      .advance__booking .form__booking-text .schedule__block .date {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%; }
+        .advance__booking .form__booking-text .schedule__block .date .title__date {
+          color: #2E266F;
+          position: relative;
+          padding-bottom: 10px; }
+          .advance__booking .form__booking-text .schedule__block .date .title__date::before {
+            content: "";
+            position: absolute;
+            right: 36px;
+            top: 12px;
+            display: block;
+            width: 0;
+            height: 0;
+            border-left: 8px solid transparent;
+            border-right: 8px solid transparent;
+            border-top: 8px solid #35CD8C; }
+        .advance__booking .form__booking-text .schedule__block .date .date__text {
+          white-space: nowrap;
+          color: #2E266F;
+          opacity: .5; }
+      .advance__booking .form__booking-text .schedule__block .time {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
+        margin: 0 70px; }
+        .advance__booking .form__booking-text .schedule__block .time .title__time {
+          color: #2E266F;
+          position: relative;
+          padding-bottom: 10px; }
+          .advance__booking .form__booking-text .schedule__block .time .title__time::before {
+            content: "";
+            position: absolute;
+            right: 36px;
+            top: 12px;
+            display: block;
+            width: 0;
+            height: 0;
+            border-left: 8px solid transparent;
+            border-right: 8px solid transparent;
+            border-top: 8px solid #35CD8C; }
+        .advance__booking .form__booking-text .schedule__block .time .time__text {
+          color: #2E266F;
+          opacity: .5; }
+      .advance__booking .form__booking-text .schedule__block .guests {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%; }
+        .advance__booking .form__booking-text .schedule__block .guests .title__guests {
+          color: #2E266F;
+          position: relative;
+          padding-bottom: 10px; }
+          .advance__booking .form__booking-text .schedule__block .guests .title__guests::before {
+            content: "";
+            position: absolute;
+            right: 36px;
+            top: 12px;
+            display: block;
+            width: 0;
+            height: 0;
+            border-left: 8px solid transparent;
+            border-right: 8px solid transparent;
+            border-top: 8px solid #35CD8C; }
+        .advance__booking .form__booking-text .schedule__block .guests .guests__text {
+          white-space: nowrap;
+          color: #2E266F;
+          opacity: .5; }
 
 /* Slider */
 .slick-slider {

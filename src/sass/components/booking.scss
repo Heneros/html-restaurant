@@ -4,7 +4,6 @@
     width: 100%;
     height: 950px;
     position: relative;
-
 }
 .advance__booking{
     position: relative;
@@ -41,19 +40,137 @@
             width: 660px;
         }
     }
+    .form__booking-text{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 11% 0;
+        h2{
+            font-weight: 500;
+            font-size: 36px;
+            line-height: 24px;
+            color: #2E266F;
+            margin-bottom: 60px;
+            &::before{
+                content: "";
+                width: 230px;
+                height: 15px;
+                position: relative;
+                display: block;
+                background: #35CD8C;
+                margin: 0 auto;
+                bottom: 35px;
+            }
+        }
+        .form__search-booking {
+          input{
+            width: 544px;
+            outline: none;
+            border: none;
+            background-color: #fff;
+            &::placeholder{
+                color: #2E266F;
+                opacity: .5;
+            }
+          }
+          .btn__search-form{
+              width: 128px;
+              height: 62px;
+              background-color: #35CD8C;
+              color: #fff;
+              border: none;
+              outline: none;
+              cursor: pointer;
+              font-weight: 600;
+              font-size: 30px;
+              text-transform: uppercase;
+          }
+        }
+        .schedule__block{
+            display: flex;
+            margin-top: 70px;
+            .date{
+                display: flex;
+                flex-direction: column;
+                flex-basis: 100%;
+                .title__date{
+                    color: #2E266F;
+                    position: relative;
+                    padding-bottom: 10px;
+                    &::before{
+                        content: "";
+                        position: absolute;
+                        right: 36px;
+                        top: 12px;
+                        display: block;
+                        width: 0;
+                        height: 0; 
+                        border-left: 8px solid transparent;
+                        border-right: 8px solid transparent;
+                        border-top: 8px solid $green;
+                    }
+                }
+                .date__text{
+                    white-space: nowrap;
+                    color: #2E266F;
+                    opacity: .5;
+                }
+            }
+            .time{
+                display: flex;
+                flex-direction: column;
+                flex-basis: 100%;
+                margin: 0 70px;
+                .title__time{
+                    color: #2E266F;
+                    position: relative;
+                    padding-bottom: 10px;
+                    &::before{
+                        content: "";
+                        position: absolute;
+                        right: 36px;
+                        top: 12px;
+                        display: block;
+                        width: 0;
+                        height: 0; 
+                        border-left: 8px solid transparent;
+                        border-right: 8px solid transparent;
+                        border-top: 8px solid $green;
+                    }
+                }
+                .time__text{
+                    color: #2E266F;
+                    opacity: .5;
+                }
 
-    // &::after{
-    //     content: "";
-    //     background-image: url('../img/salad.png');
-    //     background-repeat: no-repeat;
-    //     // position: absolute;
-    //     // right: 0;
-    //     // bottom: 0;
-    //     position: relative;
-    //     width: 202px;
-    //     height: 477px;
-    //     display: block;
-
-
-    // }
+            }
+            .guests{
+                display: flex;
+                flex-direction: column;
+                flex-basis: 100%;
+                .title__guests{
+                    color: #2E266F;
+                    position: relative;
+                    padding-bottom: 10px;
+                    &::before{
+                        content: "";
+                        position: absolute;
+                        right: 36px;
+                        top: 12px;
+                        display: block;
+                        width: 0;
+                        height: 0; 
+                        border-left: 8px solid transparent;
+                        border-right: 8px solid transparent;
+                        border-top: 8px solid $green;
+                    }
+                }
+                .guests__text{
+                    white-space: nowrap;
+                    color: #2E266F;
+                    opacity: .5;
+                }
+            }
+        }
+    }
 }
