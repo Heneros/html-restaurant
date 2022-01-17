@@ -1532,11 +1532,11 @@ body.menu-open {
       outline: none; }
   .food__items .arrow__see-more {
     position: absolute;
-    top: 0;
+    top: 88px;
     right: 0; }
     .food__items .arrow__see-more img {
       position: absolute;
-      right: -180px;
+      right: -154px;
       top: 292px;
       cursor: pointer; }
 
@@ -1549,6 +1549,10 @@ body.menu-open {
 @media only screen and (max-width: 1605px) and (min-width: 1381px) {
   .food__items .arrow__see-more img {
     right: -80px; } }
+
+@media only screen and (max-width: 1530px) and (min-width: 1381px) {
+  .food__items .arrow__see-more img {
+    right: -49px; } }
 
 @media only screen and (max-width: 1500px) and (min-width: 1316px) {
   .food__items .arrow__see-more img {
@@ -1609,17 +1613,15 @@ body.menu-open {
     left: 105px; } }
 
 @media only screen and (max-width: 1100px) {
-  .food__items .arrow__see-more {
-    position: relative; }
-    .food__items .arrow__see-more::after {
-      content: "See More";
-      display: block;
-      position: absolute;
-      top: 180px;
-      right: 0;
-      font-size: 14px;
-      line-height: 24px;
-      color: #35CD8C; } }
+  .food__items .arrow__see-more::after {
+    content: "See More";
+    display: block;
+    position: absolute;
+    top: 180px;
+    right: 0;
+    font-size: 14px;
+    line-height: 24px;
+    color: #35CD8C; } }
 
 @media only screen and (max-width: 1100px) and (min-width: 999px) {
   .food__items .arrow__see-more img {
@@ -1899,6 +1901,24 @@ body.menu-open {
     right: 0;
     background-color: #fff;
     margin: 0 auto; }
+    .advance__booking .block-advance__booking::after {
+      content: "";
+      background-image: url("../img/dots-bottom-booking.svg");
+      position: relative;
+      display: block;
+      height: 50px;
+      width: 315px;
+      left: 56px; }
+    .advance__booking .block-advance__booking::before {
+      content: "";
+      background-image: url("../img/dots-top-booking.svg");
+      background-repeat: no-repeat;
+      position: absolute;
+      display: block;
+      height: 100%;
+      width: 315px;
+      right: -57px;
+      bottom: 64px; }
   .advance__booking .salad__img {
     position: absolute;
     right: 0;
@@ -1916,7 +1936,7 @@ body.menu-open {
     z-index: 999; }
     .advance__booking .lettuce__img img {
       height: 1296px;
-      width: 660px; }
+      width: 607px; }
   .advance__booking .form__booking-text {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1998,7 +2018,7 @@ body.menu-open {
             content: "";
             position: absolute;
             right: 36px;
-            top: 12px;
+            top: 8px;
             display: block;
             width: 0;
             height: 0;
@@ -2027,8 +2047,8 @@ body.menu-open {
           .advance__booking .form__booking-text .schedule__block .time .title__time::before {
             content: "";
             position: absolute;
-            right: 36px;
-            top: 12px;
+            right: 3px;
+            top: 8px;
             display: block;
             width: 0;
             height: 0;
@@ -2055,8 +2075,9 @@ body.menu-open {
           .advance__booking .form__booking-text .schedule__block .guests .title__guests::before {
             content: "";
             position: absolute;
-            right: 36px;
-            top: 12px;
+            right: 0;
+            left: 58px;
+            top: 8px;
             display: block;
             width: 0;
             height: 0;
@@ -2067,6 +2088,40 @@ body.menu-open {
           white-space: nowrap;
           color: #2E266F;
           opacity: .5; }
+
+@media only screen and (max-width: 1710px) and (min-width: 1560px) {
+  .advance__booking .lettuce__img img {
+    width: 449px;
+    -o-object-fit: cover;
+       object-fit: cover; } }
+
+@media only screen and (max-width: 1560px) and (min-width: 1450px) {
+  .advance__booking .lettuce__img img {
+    width: 405px;
+    -o-object-fit: cover;
+       object-fit: cover; } }
+
+@media only screen and (max-width: 1450px) and (min-width: 1380px) {
+  .advance__booking .lettuce__img img {
+    width: 380px;
+    -o-object-fit: cover;
+       object-fit: cover; } }
+
+@media only screen and (max-width: 1380px) and (min-width: 1300px) {
+  .advance__booking .lettuce__img img {
+    width: 350px;
+    -o-object-fit: cover;
+       object-fit: cover; }
+  .advance__booking .block-advance__booking {
+    max-width: 1045px; }
+  .advance__booking .block-advance__booking::after {
+    top: 35px; } }
+
+@media only screen and (max-width: 1300px) and (min-width: 300px) {
+  .advance__booking .lettuce__img img {
+    width: 280px;
+    -o-object-fit: cover;
+       object-fit: cover; } }
 
 /* Slider */
 .slick-slider {
