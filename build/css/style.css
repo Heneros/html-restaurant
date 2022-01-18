@@ -2117,9 +2117,47 @@ body.menu-open {
   .advance__booking .block-advance__booking::after {
     top: 35px; } }
 
-@media only screen and (max-width: 1300px) and (min-width: 300px) {
+@media only screen and (max-width: 1300px) and (min-width: 1270px) {
   .advance__booking .lettuce__img img {
     width: 280px;
+    -o-object-fit: cover;
+       object-fit: cover; }
+  .advance__booking .block-advance__booking {
+    max-width: 1045px; }
+  .advance__booking .block-advance__booking::after {
+    top: 35px; } }
+
+@media only screen and (max-width: 1270px) and (min-width: 200px) {
+  .advance__booking .lettuce__img img {
+    width: 280px;
+    -o-object-fit: cover;
+       object-fit: cover; }
+  .advance__booking .block-advance__booking {
+    max-width: 1045px;
+    margin: unset; }
+  .advance__booking .block-advance__booking::after {
+    top: 154px; }
+  .advance__booking .form__booking-text {
+    margin: 11% 0 0 22%; }
+  .advance__booking .form__booking-text .form__search-booking .btn__search-form {
+    z-index: 9999;
+    position: relative; }
+  .advance__booking .salad__img img {
+    width: 261px; } }
+
+@media (max-width: 1183px) {
+  .advance__booking .form__booking-text {
+    margin: 11% 0 0 14%; }
+  .advance__booking .form__booking-text .form__search-booking input {
+    width: 400px; } }
+
+@media (max-width: 1120px) {
+  .advance__booking .block-advance__booking {
+    max-width: 923px; } }
+
+@media (max-width: 1040px) {
+  .advance__booking .lettuce__img img {
+    width: 217px;
     -o-object-fit: cover;
        object-fit: cover; } }
 
