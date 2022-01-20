@@ -6,14 +6,14 @@ const imagemin = require("gulp-imagemin");
 const imageminJpegRecompress = require('imagemin-jpeg-recompress');
 const imageminJpegtran = require('imagemin-jpegtran');
 const pngquant = require('imagemin-pngquant');
-const cssmin = require('gulp-cssmin');
+
 const concat = require('gulp-concat');
 const autoprefixer = require('gulp-autoprefixer');
 const uglify = require("gulp-uglify");
 
 const babel = require('gulp-babel');
 const webpack = require("webpack-stream");
-
+const cssmin = require('gulp-cssmin');
 
 
 

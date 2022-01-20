@@ -2245,6 +2245,52 @@ body.menu-open {
   .advance__booking .form__booking-text .form__search-booking .btn__search-form {
     width: 84px; } }
 
+@media only screen and (max-width: 599px) and (min-width: 200px) {
+  .advance__booking .lettuce__img img {
+    height: 827px;
+    width: 108px; }
+  .advance__booking .lettuce__img {
+    top: -188px; }
+  .advance__booking .salad__img {
+    top: 0; }
+  .advance__booking .form__booking-text h2 {
+    font-size: 24px; }
+  .advance__booking .block-advance__booking {
+    height: 381px;
+    max-width: 428px;
+    top: 84px; }
+  .advance__booking .block-advance__booking::after {
+    top: 44px; }
+  .advance__booking .form__booking-text .form__search-booking input {
+    width: 142px;
+    position: relative; }
+  .wrapper__advance-booking {
+    height: 548px; } }
+
+@media (max-width: 505px) {
+  .wrapper__advance-booking {
+    overflow: hidden; }
+  .advance__booking .salad__img img {
+    -o-object-fit: none;
+       object-fit: none;
+    width: 87px; }
+  .advance__booking .form__booking-text {
+    margin: 11% 0 0 6%; }
+  .advance__booking .block-advance__booking {
+    z-index: 0; } }
+
+@media (max-width: 440px) {
+  .advance__booking .salad__img img {
+    -o-object-fit: contain;
+       object-fit: contain;
+    width: 142px; }
+  .advance__booking .salad__img {
+    right: -65px; }
+  .advance__booking .lettuce__img {
+    left: -79px; }
+  .advance__booking .lettuce__img img {
+    width: 158px; } }
+
 /* Slider */
 .slick-slider {
   position: relative;
