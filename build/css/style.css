@@ -2291,6 +2291,94 @@ body.menu-open {
   .advance__booking .lettuce__img img {
     width: 158px; } }
 
+.wrapper__services-text {
+  max-width: 1645px;
+  min-width: 320px;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0 auto; }
+  .wrapper__services-text .services__text-container {
+    padding: 200px 349px 0 0; }
+    .wrapper__services-text .services__text-container .services__content {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+      .wrapper__services-text .services__text-container .services__content .title__services {
+        -webkit-box-flex: 1;
+            -ms-flex: 1 1;
+                flex: 1 1;
+        font-weight: 500;
+        font-size: 48px;
+        line-height: 62px;
+        text-transform: capitalize;
+        padding-right: 126px;
+        padding-left: 53px;
+        position: relative;
+        padding-top: 33px; }
+        .wrapper__services-text .services__text-container .services__content .title__services::after {
+          content: "";
+          background-color: #35cd8c;
+          height: 126px;
+          width: 25px;
+          position: absolute;
+          left: 0px;
+          top: 0px; }
+      .wrapper__services-text .services__text-container .services__content .description__services {
+        -webkit-box-flex: 1;
+            -ms-flex: 1;
+                flex: 1;
+        font-size: 14px;
+        line-height: 24px;
+        text-transform: capitalize;
+        color: #707070;
+        position: relative;
+        top: 32px; }
+
+@media only screen and (max-width: 1500px) and (min-width: 300px) {
+  .wrapper__services-text .services__text-container {
+    padding: 0px 39px 0 0; } }
+
+@media only screen and (max-width: 1686px) and (min-width: 300px) {
+  .wrapper__services-text .services__content {
+    padding: 105px 43px; } }
+
+@media only screen and (max-width: 905px) {
+  .wrapper__services-text .services__text-container .services__content .title__services {
+    padding-top: 0px; } }
+
+@media only screen and (max-width: 855px) {
+  .wrapper__services-text .services__text-container .services__content .description__services {
+    -webkit-box-flex: unset;
+        -ms-flex: unset;
+            flex: unset; } }
+
+@media (max-width: 786px) {
+  .wrapper__services-text .services__text-container .services__content .title__services {
+    padding-right: 49px; } }
+
+@media (max-width: 676px) {
+  .wrapper__services-text .services__text-container .services__content .title__services {
+    padding-left: 37px; } }
+
+@media only screen and (max-width: 599px) and (min-width: 300px) {
+  .wrapper__services-text .services__text-container .services__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .wrapper__services-text .services__text-container .services__content .title__services {
+    padding-top: 28px; }
+  .wrapper__services-text .services__text-container {
+    padding: 0; } }
+
+@media only screen and (max-width: 472px) and (min-width: 100px) {
+  .wrapper__services-text .services__text-container .services__content .title__services {
+    padding-top: 0; } }
+
 /* Slider */
 .slick-slider {
   position: relative;
