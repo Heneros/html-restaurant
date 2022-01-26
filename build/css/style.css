@@ -2379,6 +2379,30 @@ body.menu-open {
   .wrapper__services-text .services__text-container .services__content .title__services {
     padding-top: 0; } }
 
+.services__schema {
+  background: url("../img/schema__booking.png") no-repeat;
+  min-height: 962px;
+  width: 100%;
+  margin-top: 162px; }
+  .services__schema .advanced__table {
+    height: 380px;
+    width: 390px;
+    position: relative;
+    background-color: #FFEDDE; }
+    .services__schema .advanced__table::after {
+      content: "";
+      background-image: url("../img/advanced-table.svg");
+      background-repeat: no-repeat;
+      height: 199px;
+      width: 199px;
+      position: absolute;
+      right: 0;
+      left: 0;
+      top: 77px;
+      margin: 0px auto;
+      bottom: 0;
+      display: block; }
+
 /* Slider */
 .slick-slider {
   position: relative;

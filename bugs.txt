@@ -6,4 +6,5 @@ Minor Bugs to fix:
      > 999px header slider increase width image item
      > 700px .input__btn increase width
      button in header slider. move it higher 
-     'See Mor' is transferred to another line on adaptive
+     'See More' is transferred to another line on adaptive
+     top-restaurant section > 1250 title make align
