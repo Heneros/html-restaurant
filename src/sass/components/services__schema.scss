@@ -3,11 +3,53 @@
     min-height: 962px;
     width: 100%;
     margin-top: 162px;
+    .advanced-first__table{
+        position: relative;
+        max-width: 1000px;
+        .advanced__table-text{
+            position: absolute;
+            top: 55%;
+            right: 157px;
+            max-width: 281px;
+            .title__advanced-service{
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 32px;
+                text-transform: capitalize;
+                position: relative;
+                &::after{
+                    content: "";
+                    position: absolute;
+                    bottom: 10px;
+                    left: 117px;
+                    width: 84px;
+                    height: 3px;
+                    background-color: $green;
+                }
+                &::before{
+                    content: "";
+                    background-image: url('../img/lineArrow.svg');
+                    position: absolute;
+                    top: 45px;
+                    right: 105px;
+                    width: 183px;
+                    height: 16px;
+         
+                }
+            }
+            p{
+                font-size: 14px;
+                line-height: 24px;
+                color: #707070;
+            }
+        }
+    }
     .advanced__table{
         height: 380px;
         width: 390px;
         position: relative;
         background-color: #FFEDDE;
+        top: 112px;
         &::after{
             content: "";
             background-image: url('../img/advanced-table.svg');
@@ -22,6 +64,6 @@
             bottom: 0;
             display: block;
         }
- 
     }
+
 }
