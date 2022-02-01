@@ -3,6 +3,10 @@
     min-height: 962px;
     width: 100%;
     margin-top: 162px;
+    .items__blocks{
+        display: flex;
+        flex-direction: column;
+    }
     .advanced-first__table{
         position: relative;
         max-width: 1000px;
@@ -26,7 +30,7 @@
                     height: 3px;
                     background-color: $green;
                 }
-                &::before{
+                &::before{ 
                     content: "";
                     background-image: url('../img/lineArrow.svg');
                     position: absolute;
@@ -34,7 +38,6 @@
                     right: 105px;
                     width: 183px;
                     height: 16px;
-         
                 }
             }
             p{
@@ -65,5 +68,75 @@
             display: block;
         }
     }
-
+    .advanced-second__table{
+        position: relative;
+        display: flex;
+        flex-direction: row-reverse;
+        max-width: 868px;
+        .advanced__table-text{
+            position: absolute;
+            top: 55%;
+            left: 0;
+            max-width: 281px;
+            .title__advanced-service{
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 32px;
+                text-transform: capitalize;
+                position: relative;
+                color: #2E266F;
+                &::before{
+                    content: "";
+                    position: absolute;
+                    bottom: 10px;
+                    left: 0;
+                    width: 84px;
+                    height: 3px;
+                    background-color: $green;
+                }
+                &::after{ 
+                    content: "";
+                    background-image: url('../img/lineArrow.svg');
+                    position: absolute;
+                    top: 45px;
+                    left: 322px;
+                    z-index: 9999;
+                    transform: rotate(180deg);
+                    right: 29px;
+                    width: 183px;
+                    height: 16px;
+                }
+             
+            }
+            p{
+                font-size: 14px;
+                line-height: 24px;
+                color: #707070;
+            }
+            span{
+                padding-left: 110px;
+            }
+        }
+        .advanced__plate{
+            height: 380px;
+            width: 390px;
+            position: relative;
+            background-color: #FFEDDE;
+            top: 112px;
+            &::after{
+                content: "";
+                background-image: url('../img/plate-icon.svg');
+                background-repeat: no-repeat;
+                height: 199px;
+                width: 199px;
+                position: absolute;
+                right: 0;
+                left: 0;
+                top: 77px;
+                margin: 0px auto;
+                bottom: 0;
+                display: block;
+            }
+        }
+    }
 }
