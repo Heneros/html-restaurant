@@ -2514,6 +2514,43 @@ body.menu-open {
         margin: 0px auto;
         bottom: 0;
         display: block; }
+  .services__schema .advanced-big__box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    position: absolute;
+    top: 112px;
+    right: 0; }
+    .services__schema .advanced-big__box .advanced-big__icon {
+      height: 759px;
+      width: 462px;
+      background-color: #FFEDDE; }
+      .services__schema .advanced-big__box .advanced-big__icon .scooter::after {
+        content: "";
+        background-image: url("../img/scooter.svg");
+        background-repeat: no-repeat;
+        width: 212px;
+        height: 168px;
+        position: relative;
+        display: block;
+        margin: 0 auto; }
+      .services__schema .advanced-big__box .advanced-big__icon .text-big__box {
+        padding: 309px 109px 0 109px;
+        text-align: center; }
+        .services__schema .advanced-big__box .advanced-big__icon .text-big__box .title__big-box {
+          font-weight: 500;
+          font-size: 24px;
+          line-height: 32px;
+          text-transform: capitalize; }
+        .services__schema .advanced-big__box .advanced-big__icon .text-big__box p {
+          color: #707070;
+          font-size: 14px;
+          line-height: 24px; }
+  .services__schema .services__wrapper {
+    position: relative; }
 
 /* Slider */
 .slick-slider {
