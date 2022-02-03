@@ -197,3 +197,18 @@
     }
 }
 
+@media only screen and(max-width: 1420px){
+    .services__schema .advanced__table{
+        width: 271px;
+        height: 275px;
+    }
+    .services__schema .advanced-second__table .advanced__plate{
+        width: 271px;
+        height: 275px;
+    }
+    .services__schema .advanced-second__table{
+        max-width: 639px;
+    }
+
+
+}
