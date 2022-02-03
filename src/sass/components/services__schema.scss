@@ -75,7 +75,7 @@
         max-width: 868px;
         .advanced__table-text{
             position: absolute;
-            top: 55%;
+            top: 64%;
             left: 0;
             max-width: 281px;
             .title__advanced-service{
@@ -96,25 +96,25 @@
                 }
                 &::after{ 
                     content: "";
-                    background-image: url('../img/lineArrow.svg');
+                    background-image: url('../img/long-arrow.svg');
+                    
                     position: absolute;
                     top: 45px;
-                    left: 322px;
+                    left: 244px;
                     z-index: 9999;
-                    transform: rotate(180deg);
+                    transform: rotate(360deg);
                     right: 29px;
-                    width: 183px;
+                    width: 267px;
                     height: 16px;
                 }
-             
             }
             p{
                 font-size: 14px;
                 line-height: 24px;
                 color: #707070;
             }
-            span{
-                padding-left: 110px;
+            .number__title{
+                padding-left: 104px;
             }
         }
         .advanced__plate{
@@ -132,7 +132,7 @@
                 position: absolute;
                 right: 0;
                 left: 0;
-                top: 77px;
+                top: 116px;
                 margin: 0px auto;
                 bottom: 0;
                 display: block;
@@ -152,19 +152,21 @@
             width: 462px;
             background-color: #FFEDDE;
             .scooter{
+                position: relative;
+                top: 163px;
               &::after{
                 content: "";
                 background-image: url('../img/scooter.svg');
                 background-repeat: no-repeat;
-                width: 212px;
-                height: 168px;
+                width: 322px;
+                height: 242px;     
                 position: relative;
                 display: block;
                 margin: 0 auto;
               }
-            }
+            }   
             .text-big__box{
-                padding: 309px 109px 0 109px;
+                padding: 245px 109px 0 109px;
                 text-align: center;
                 .title__big-box{
                     font-weight: 500;
@@ -176,6 +178,16 @@
                     color: #707070;
                     font-size: 14px;
                     line-height: 24px;
+                    &::after{
+                        content: "";
+                        display: block;
+                        position: relative;
+                        top: 20px;
+                        left: 26px;
+                        width: 192px;
+                        height: 3px;
+                        background-color: $green;
+                    }
                 }
             }
         }
@@ -183,5 +195,5 @@
     .services__wrapper{
         position: relative;
     }
-
 }
+
