@@ -2564,7 +2564,13 @@ body.menu-open {
   .services__schema .services__wrapper {
     position: relative; }
 
-@media only screen and (max-width: 1420px) {
+@media only screen and (max-width: 1680px) {
+  .items__blocks {
+    margin-left: 30px; }
+  .services__schema .advanced-big__box {
+    right: 30px; } }
+
+@media only screen and (max-width: 1500px) {
   .services__schema .advanced__table {
     width: 271px;
     height: 275px; }
@@ -2572,7 +2578,50 @@ body.menu-open {
     width: 271px;
     height: 275px; }
   .services__schema .advanced-second__table {
-    max-width: 639px; } }
+    max-width: 639px; }
+  .services__schema .advanced-first__table .advanced__table-text {
+    top: 69%;
+    right: 318px; }
+  .services__schema .advanced-second__table .advanced__table-text .title__advanced-service::after {
+    content: "";
+    background-image: url(../img/lineArrow.svg);
+    position: absolute;
+    top: 45px;
+    left: 207px;
+    width: 183px;
+    height: 16px;
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+            transform: rotate(180deg);
+    background-repeat: no-repeat; }
+  .services__schema .advanced-second__table .advanced__plate::after {
+    top: 50px; }
+  .services__schema .advanced-big__box .advanced-big__icon {
+    height: 550px; }
+  .services__schema .advanced-big__box .advanced-big__icon .scooter {
+    top: 65px; }
+  .services__schema .advanced-big__box .advanced-big__icon .text-big__box {
+    padding: 112px 109px 0 109px; }
+  .services__schema .advanced__table::after {
+    top: 26px; } }
+
+@media only screen and (max-width: 1230px) {
+  .services__schema .advanced-big__box .advanced-big__icon {
+    width: 372px; }
+  .services__schema .advanced-big__box .advanced-big__icon .text-big__box {
+    padding: 112px 44px 0 44px; }
+  .services__schema .advanced-big__box .advanced-big__icon .text-big__box p::after {
+    left: 45px; }
+  .services__schema .advanced-second__table {
+    max-width: 543px; }
+  .services__schema .advanced-second__table .advanced__table-text .title__advanced-service::after {
+    left: 165px;
+    width: 141px; }
+  .services__schema .advanced-first__table .advanced__table-text {
+    right: 371px; }
+  .services__schema .advanced-first__table .advanced__table-text .title__advanced-service::before {
+    right: 53px;
+    width: 183px; } }
 
 /* Slider */
 .slick-slider {
