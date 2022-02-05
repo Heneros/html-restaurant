@@ -2620,8 +2620,30 @@ body.menu-open {
   .services__schema .advanced-first__table .advanced__table-text {
     right: 371px; }
   .services__schema .advanced-first__table .advanced__table-text .title__advanced-service::before {
-    right: 53px;
-    width: 183px; } }
+    right: 101px;
+    width: 137px; } }
+
+@media only screen and (max-width: 1050px) {
+  .services__schema .advanced-first__table .advanced__table-text {
+    right: 0px;
+    left: 345px;
+    max-width: 281px; }
+  .services__schema .advanced-first__table {
+    max-width: 543px; }
+  .services__schema .advanced-big__box {
+    bottom: 0;
+    top: 100px;
+    position: relative;
+    margin: 0 auto;
+    max-width: 464px; }
+  .services__schema {
+    margin-top: unset;
+    min-height: unset; }
+  .services__schema .items__blocks {
+    margin: 0 auto;
+    max-width: 550px;
+    margin-top: 56px;
+    margin-bottom: 41px; } }
 
 /* Slider */
 .slick-slider {
