@@ -2382,7 +2382,7 @@ body.menu-open {
 
 .services__schema {
   background: url("../img/schema__booking.png") no-repeat;
-  min-height: 962px;
+  min-height: 810px;
   width: 100%;
   margin-top: 162px; }
   .services__schema .items__blocks {
@@ -2638,7 +2638,8 @@ body.menu-open {
     max-width: 464px; }
   .services__schema {
     margin-top: unset;
-    min-height: unset; }
+    min-height: unset;
+    background: url(../img/schema__booking.png); }
   .services__schema .items__blocks {
     margin: 0 auto;
     max-width: 550px;
@@ -2812,6 +2813,25 @@ body.menu-open {
 @media only screen and (max-width: 385px) {
   .services__schema .advanced-second__table .advanced__table-text .title__advanced-service::after {
     left: 112px; } }
+
+.explore__foods {
+  margin-top: 92px; }
+  .explore__foods .text__food {
+    text-align: center;
+    max-width: 580px;
+    margin: 0 auto; }
+    .explore__foods .text__food .explore__foods-title {
+      text-transform: capitalize;
+      font-weight: 500;
+      font-size: 48px;
+      line-height: 62px; }
+    .explore__foods .text__food p {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 24px;
+      text-transform: capitalize;
+      color: #707070; }
 
 /* Slider */
 .slick-slider {

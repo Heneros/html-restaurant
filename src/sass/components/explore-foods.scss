@@ -1,0 +1,22 @@
+.explore__foods{
+    margin-top: 92px;
+    .text__food{
+        text-align: center;
+        max-width: 580px;
+        margin: 0 auto;
+        .explore__foods-title{
+            text-transform: capitalize;
+            font-weight: 500;
+            font-size: 48px;
+            line-height: 62px;
+        }
+        p{
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 24px;
+            text-transform: capitalize;
+            color: #707070;
+        }
+    }
+}
