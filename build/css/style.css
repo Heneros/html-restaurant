@@ -2651,6 +2651,9 @@ body.menu-open {
 .advanced__plate img {
   display: none; }
 
+.scooter img {
+  display: none; }
+
 @media only screen and (max-width: 599px) {
   .services__schema .advanced-second__table .advanced__table-text {
     margin: 0 auto;
@@ -2721,7 +2724,7 @@ body.menu-open {
     left: 143px; }
   .services__schema .advanced-second__table .advanced__plate {
     margin: 0 auto;
-    left: 100px; }
+    left: 87px; }
   .services__schema .advanced-second__table .advanced__plate img {
     top: 63px; }
   .services__schema .advanced-first__table .advanced__table-text {
@@ -2750,7 +2753,20 @@ body.menu-open {
         -ms-flex-pack: inherit;
             justify-content: inherit; }
   .services__schema .items__blocks {
-    max-width: 480px; } }
+    max-width: 480px; }
+  .services__schema .advanced-second__table .advanced__table-text .title__advanced-service::after {
+    left: 104px; }
+  .services__schema .advanced-big__box .advanced-big__icon .scooter::after {
+    background-image: unset;
+    height: 46px; }
+  .scooter img {
+    display: block;
+    width: 212px;
+    height: 159px;
+    margin: 0 auto; }
+  .services__schema .advanced-big__box {
+    right: 0;
+    max-width: 357px; } }
 
 @media only screen and (max-width: 500px) {
   .services__schema .advanced-second__table {
