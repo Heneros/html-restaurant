@@ -19,4 +19,61 @@
             color: #707070;
         }
     }
+    .food__items-explore{
+        margin: 0 120px;
+        max-width: 1651px;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 1%;
+    }
+    .food__item{
+        display: grid;
+        grid-template-columns: 530px ;
+        grid-template-rows: 300px 300px;
+        grid-template-areas: "image" "text"  "price";
+        border-radius: 25px;
+        box-shadow: 0px 4px 4px rgba(235, 241, 245, 0.5);
+        background-color: #fff;
+    }
+    .image__food{
+        grid-template: "image";
+        background-image: url('../img/food-1.png');
+        background-position: center;
+        border-radius: 25px 25px 0px 0px;
+        max-width: 500px;
+    }
+    .food__text-bottom{
+        grid-template: "text";
+        padding: 0 30px 30px 30px;
+        display: grid;
+        grid-template-columns: 350px 150px;
+      
+        h5{
+            text-transform: capitalize;
+            color: #2E266F;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 32px;
+        }
+        p{
+            font-size: 14px;
+            line-height: 24px;
+            text-transform: capitalize;
+            color: #707070;
+        }
+      .price{
+        grid-template: "price";
+        padding-top: 41px;
+        span{
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 32px;
+            display: flex;
+            align-items: center;
+            text-transform: capitalize;
+            color: $green;
+        }
+      }
+    }
 }

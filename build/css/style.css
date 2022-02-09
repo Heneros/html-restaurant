@@ -2832,6 +2832,59 @@ body.menu-open {
       line-height: 24px;
       text-transform: capitalize;
       color: #707070; }
+  .explore__foods .food__items-explore {
+    margin: 0 120px;
+    max-width: 1651px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1%; }
+  .explore__foods .food__item {
+    display: grid;
+    grid-template-columns: 530px;
+    grid-template-rows: 300px 300px;
+    grid-template-areas: "image" "text"  "price";
+    border-radius: 25px;
+    -webkit-box-shadow: 0px 4px 4px rgba(235, 241, 245, 0.5);
+            box-shadow: 0px 4px 4px rgba(235, 241, 245, 0.5);
+    background-color: #fff; }
+  .explore__foods .image__food {
+    grid-template: "image";
+    background-image: url("../img/food-1.png");
+    background-position: center;
+    border-radius: 25px 25px 0px 0px;
+    max-width: 500px; }
+  .explore__foods .food__text-bottom {
+    grid-template: "text";
+    padding: 0 30px 30px 30px;
+    display: grid;
+    grid-template-columns: 350px 150px; }
+    .explore__foods .food__text-bottom h5 {
+      text-transform: capitalize;
+      color: #2E266F;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 32px; }
+    .explore__foods .food__text-bottom p {
+      font-size: 14px;
+      line-height: 24px;
+      text-transform: capitalize;
+      color: #707070; }
+    .explore__foods .food__text-bottom .price {
+      grid-template: "price";
+      padding-top: 41px; }
+      .explore__foods .food__text-bottom .price span {
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 32px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        text-transform: capitalize;
+        color: #35CD8C; }
 
 /* Slider */
 .slick-slider {
