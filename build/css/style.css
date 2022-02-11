@@ -2833,16 +2833,16 @@ body.menu-open {
       text-transform: capitalize;
       color: #707070; }
   .explore__foods .food__items-explore {
-    margin: 0 120px;
+    margin: 30px 120px 0;
     max-width: 1651px;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 1%; }
+    grid-template-columns: repeat(auto-fit, minmax(524px, 3fr));
+    grid-gap: 30px; }
   .explore__foods .food__item {
     display: grid;
-    grid-template-columns: 530px;
-    grid-template-rows: 300px 300px;
+    grid-template-columns: repeat(auto-fill, minmax(524px, 1fr));
+    grid-template-rows: 300px 200px;
     grid-template-areas: "image" "text"  "price";
     border-radius: 25px;
     -webkit-box-shadow: 0px 4px 4px rgba(235, 241, 245, 0.5);
@@ -2852,8 +2852,10 @@ body.menu-open {
     grid-template: "image";
     background-image: url("../img/food-1.png");
     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     border-radius: 25px 25px 0px 0px;
-    max-width: 500px; }
+    width: 100%; }
   .explore__foods .food__text-bottom {
     grid-template: "text";
     padding: 0 30px 30px 30px;
@@ -2880,9 +2882,9 @@ body.menu-open {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         text-transform: capitalize;
         color: #35CD8C; }
 
