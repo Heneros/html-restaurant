@@ -29,33 +29,49 @@
     }
     .food__item{
         display: grid;
-        // grid-template-columns: 530px ;
-        grid-template-columns: repeat(auto-fill, minmax(524px, 1fr));
 
-        // grid-template-rows: 300px 300px;
+        grid-template-columns: repeat(auto-fill, minmax(524px, 1fr));
         grid-template-rows: 300px 200px;
         grid-template-areas: "image" "text"  "price";
         border-radius: 25px;
         box-shadow: 0px 4px 4px rgba(235, 241, 245, 0.5);
         background-color: #fff;
     }
+
     .image__food{
         grid-template: "image";
-        background-image: url('../img/food-1.png');
+        // background-image: url('../img/food-1.png');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         border-radius: 25px 25px 0px 0px;
-        // max-width: 500px;
         width: 100%;
-
     }
+    .food-1{
+        background-image: url('../img/food-1.png');
+    }
+    .food-2{
+        background-image: url('../img/food-2.png');
+    }
+    .food-3{
+        background-image: url('../img/food-3.png');
+    }
+    .food-4{
+        background-image: url('../img/food-4.png');
+    }
+    .food-5{
+        background-image: url('../img/food-5.png');
+    }
+    .food-6{
+        background-image: url('../img/food-6.png');
+    }
+   
+
     .food__text-bottom{
         grid-template: "text";
         padding: 0 30px 30px 30px;
         display: grid;
         grid-template-columns: 350px 150px;
-      
         h5{
             text-transform: capitalize;
             color: #2E266F;
@@ -77,11 +93,93 @@
             font-size: 24px;
             line-height: 32px;
             display: flex;
-            // align-items: center;
             justify-content: center;
             text-transform: capitalize;
             color: $green;
         }
       }
+    }
+}  
+
+@media only screen and(max-width: 1365px){
+    .explore__foods .food__items-explore{
+        grid-template-columns: repeat(auto-fit, minmax(375px, 2fr));
+    }
+    .explore__foods .food__item{
+        grid-template-columns: repeat(auto-fill, minmax(375px, 1fr));
+    }
+    .explore__foods .food__text-bottom .price span{
+        justify-content: flex-start;
+    }
+    .explore__foods .food__text-bottom{
+        grid-template-columns: 271px 17px;
+    }
+}
+
+@media only screen and(max-width: 1065px) {
+    .explore__foods .food__items-explore {
+        grid-template-columns: repeat(auto-fill, minmax(270px, 2fr));
+    } 
+    .explore__foods .food__item {
+        grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    }
+    .explore__foods .food__text-bottom {
+        grid-template-columns: 210px 17px;
+    }
+}
+
+@media only screen and(max-width: 999px){
+    .explore__foods .food__items-explore{
+        margin: 30px 50px 0;
+        max-width: 1200px;
+        grid-template-columns: repeat(auto-fill, minmax(386px, 1fr));
+    }
+    .explore__foods .food__text-bottom {
+        // grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+        grid-template-columns: repeat(auto-fit, minmax(150px, 2fr));
+    }
+    .explore__foods .food__item {
+        grid-template-columns: repeat(auto-fill, minmax(386px, 1fr));
+    }
+    .explore__foods .food__text-bottom .price span{
+        justify-content: right;
+    }
+    .explore__foods .food__text-bottom p{
+        width: 347px;
+        bottom: 21px;
+        position: relative;
+    }
+}
+
+
+@media only screen and(max-width: 607px){
+    .explore__foods .food__text-bottom {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 2fr));
+    }
+    .explore__foods .food__items-explore{
+        margin: 30px 0px 0;
+    }
+}
+
+
+@media only screen and(max-width: 435px){
+    .explore__foods .food__items-explore{
+        grid-template-columns: repeat(auto-fill, minmax(185px, 1fr));
+    }
+    .explore__foods .food__item {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        grid-template-rows: repeat(auto-fill, minmax(314px, 2fr));
+    }
+    .explore__foods .food__text-bottom {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 2fr));
+    }
+    .explore__foods .food__text-bottom p {
+        width: unset;
+    }
+}
+
+@media only screen and(max-width: 415px) {
+    .explore__foods .food__text-bottom p {
+        width: 200px;
     }
 }
