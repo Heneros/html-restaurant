@@ -3021,6 +3021,59 @@ body.menu-open {
         z-index: 5;
         position: relative; }
 
+@media only screen and (max-width: 1725px) {
+  .app-restaurant .wrapper__app-restaurant {
+    margin: 0 auto; } }
+
+@media only screen and (max-width: 1550px) {
+  .app-restaurant .block__content .description__app {
+    margin-left: 75px; } }
+
+@media only screen and (max-width: 1350px) {
+  .app-restaurant .block__content .big__image-app .image__phone::after {
+    width: 586px; }
+  .app-restaurant .block__content .big__image-app img {
+    height: 800px; } }
+
+@media only screen and (max-width: 1095px) {
+  .app-restaurant .block__content .big__image-app .image__phone::after {
+    width: 430px;
+    bottom: 116px; }
+  .app-restaurant .block__content .big__image-app img {
+    height: 680px; } }
+
+@media only screen and (max-width: 940px) {
+  .app-restaurant .block__content .big__image-app img {
+    height: 510px; }
+  .app-restaurant .block__content .big__image-app .image__phone::after {
+    background-size: cover;
+    -webkit-transform: rotate(346deg);
+        -ms-transform: rotate(346deg);
+            transform: rotate(346deg);
+    height: 466px;
+    width: 375px;
+    right: 66px;
+    bottom: 44px; } }
+
+@media only screen and (max-width: 830px) {
+  .app-restaurant .block__content .description__app .content__description-app {
+    max-width: 353px; } }
+
+@media only screen and (max-width: 625px) {
+  .app-restaurant .block__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .bottom__images {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .app-restaurant .block__content .description__app .content__description-app {
+    max-width: 400px; }
+  .app-restaurant .block__content .description__app .bottom__images img {
+    width: 37%; } }
+
 /* Slider */
 .slick-slider {
   position: relative;
