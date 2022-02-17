@@ -1,0 +1,29 @@
+footer {
+    background-color: $beige;
+    position: relative;
+    .text__notified{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    text-align: center;
+    padding: 272px 0;
+    max-width: 555px;
+    text-transform: capitalize;
+    margin: 0 auto;
+    h1{
+        font-weight: normal;
+        font-size: 36px;
+       line-height: 48px;
+    }
+        p {
+        font-size: 14px;
+        line-height: 24px;
+        color: #707070;
+    }
+    input {
+        border: none;
+        outline: none;
+    }
+ }
+}

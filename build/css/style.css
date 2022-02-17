@@ -3074,6 +3074,40 @@ body.menu-open {
   .app-restaurant .block__content .description__app .bottom__images img {
     width: 37%; } }
 
+footer {
+  background-color: #FFF5EC;
+  position: relative; }
+  footer .text__notified {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    text-align: center;
+    padding: 272px 0;
+    max-width: 555px;
+    text-transform: capitalize;
+    margin: 0 auto; }
+    footer .text__notified h1 {
+      font-weight: normal;
+      font-size: 36px;
+      line-height: 48px; }
+    footer .text__notified p {
+      font-size: 14px;
+      line-height: 24px;
+      color: #707070; }
+    footer .text__notified input {
+      border: none;
+      outline: none; }
+
 /* Slider */
 .slick-slider {
   position: relative;
