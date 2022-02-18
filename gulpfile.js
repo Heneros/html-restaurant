@@ -13,7 +13,6 @@ const uglify = require("gulp-uglify");
 
 const babel = require('gulp-babel');
 const webpack = require("webpack-stream");
-const cssmin = require('gulp-cssmin');
 
 
 
@@ -77,7 +76,6 @@ gulp.task('sass', function () {
 return gulp.src(cssFiles)
     .pipe(plumber())
     .pipe(sass())
-    // .pipe(cssmin())
     .pipe(autoprefixer([
         'last 15 versions',
         '> 1%',
