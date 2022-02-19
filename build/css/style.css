@@ -2833,7 +2833,7 @@ body.menu-open {
       text-transform: capitalize;
       color: #707070; }
   .explore__foods .food__items-explore {
-    margin: 30px 120px 0;
+    margin: 30px 120px;
     max-width: 1651px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(524px, 3fr));
@@ -3107,6 +3107,12 @@ footer {
     footer .text__notified input {
       border: none;
       outline: none; }
+  footer .sprout {
+    position: absolute;
+    left: 0; }
+    footer .sprout img {
+      position: absolute;
+      height: 803px; }
 
 /* Slider */
 .slick-slider {
