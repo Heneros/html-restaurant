@@ -24,7 +24,14 @@ footer {
     input {
         border: none;
         outline: none;
+        background: #FFFFFF;
+        box-shadow: 2px 2px 30px 2px #FFF5EC;
+        border-radius: 100px;
+        width: 544px;
+        height: 90px;
+        text-indent: 35px;
     }
+ 
  }
  .sprout{
     position: absolute;
@@ -33,7 +40,6 @@ footer {
         position: absolute;
         height: 803px;
      }
-
  }
 
 }
