@@ -844,7 +844,8 @@ body.menu-open {
   height: 45px;
   right: 30px;
   z-index: 9999;
-  bottom: 125px; }
+  bottom: 125px;
+  cursor: pointer; }
 
 .next__arrow-header::before {
   content: "";
@@ -856,7 +857,8 @@ body.menu-open {
   height: 45px;
   z-index: 9999;
   bottom: 125px;
-  right: 128px; }
+  right: 128px;
+  cursor: pointer; }
 
 .container__btn-search {
   max-width: calc(100% - 20px);
@@ -1495,7 +1497,7 @@ body.menu-open {
     position: relative;
     bottom: 260px;
     padding: 49px 45px;
-    width: 550px;
+    width: 549px;
     background-color: rgba(53, 205, 140, 0.5);
     color: #FFFFFF;
     border-radius: 0 0 26px 26px; }
@@ -3115,10 +3117,11 @@ footer {
       height: 90px;
       text-indent: 35px; }
   footer .sprout {
-    position: absolute;
-    left: 0; }
+    position: relative;
+    right: 133px; }
     footer .sprout img {
       position: absolute;
+      top: 76px;
       height: 803px; }
 
 /* Slider */
