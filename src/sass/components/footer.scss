@@ -31,6 +31,16 @@ footer {
         height: 90px;
         text-indent: 35px;
     }
+    .list__footer-links{
+        margin-top: 70px;
+        a{
+            padding: 0 20px;
+            font-size: 16px;
+            color: #707070;
+            text-transform: capitalize;
+            line-height: 24px;
+        }
+    }
  }
  .sprout{
     position: relative;
