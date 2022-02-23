@@ -41,15 +41,36 @@ footer {
             line-height: 24px;
         }
     }
- }
- .sprout{
-    position: relative;
-    right: 133px;
-     img{
-        position: absolute;
-        top: 76px;
-        height: 803px;
-     }
- }
 
+
+
+ }
+//  .sprout{
+//     position: relative;
+//     right: 133px;
+//      img{
+//         position: absolute;
+//         top: 76px;
+//      }
+//  }
+.sprout {
+    background: url('../img/sprout.png') no-repeat;
+    // height: 856px;
+    // width: 800px;
+    // position: absolute;
+    // left: 0;
+    // top: 94px;
+    // margin: 0;
+    // padding: 0;
+    // height: 878px;
+    height: 874px;
+    width: 800px;
+    position: absolute;
+    left: 0;
+    // top: 75px;
+    top: 76px;
+    margin: 0;
+    padding: 0;
+
+}
 }

@@ -3125,12 +3125,14 @@ footer {
         text-transform: capitalize;
         line-height: 24px; }
   footer .sprout {
-    position: relative;
-    right: 133px; }
-    footer .sprout img {
-      position: absolute;
-      top: 76px;
-      height: 803px; }
+    background: url("../img/sprout.png") no-repeat;
+    height: 874px;
+    width: 800px;
+    position: absolute;
+    left: 0;
+    top: 76px;
+    margin: 0;
+    padding: 0; }
 
 /* Slider */
 .slick-slider {
