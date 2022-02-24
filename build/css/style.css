@@ -3097,7 +3097,8 @@ footer {
     padding: 272px 0;
     max-width: 555px;
     text-transform: capitalize;
-    margin: 0 auto; }
+    margin: 0 auto;
+    position: relative; }
     footer .text__notified h1 {
       font-weight: normal;
       font-size: 36px;
@@ -3133,6 +3134,24 @@ footer {
     top: 76px;
     margin: 0;
     padding: 0; }
+  footer .btn__email-footer {
+    width: 56px;
+    height: 56px;
+    background: #35CD8C;
+    border-radius: 50%;
+    position: absolute;
+    right: 26px;
+    top: 513px;
+    cursor: pointer; }
+    footer .btn__email-footer::after {
+      content: "";
+      background-image: url("../img/arrow-footer.svg");
+      position: relative;
+      top: 19px;
+      left: 14px;
+      display: block;
+      width: 24px;
+      height: 18px; }
 
 /* Slider */
 .slick-slider {

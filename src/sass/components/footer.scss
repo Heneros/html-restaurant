@@ -11,6 +11,7 @@ footer {
     max-width: 555px;
     text-transform: capitalize;
     margin: 0 auto;
+    position: relative;
     h1{
         font-weight: normal;
         font-size: 36px;
@@ -41,36 +42,35 @@ footer {
             line-height: 24px;
         }
     }
-
-
-
  }
-//  .sprout{
-//     position: relative;
-//     right: 133px;
-//      img{
-//         position: absolute;
-//         top: 76px;
-//      }
-//  }
 .sprout {
     background: url('../img/sprout.png') no-repeat;
-    // height: 856px;
-    // width: 800px;
-    // position: absolute;
-    // left: 0;
-    // top: 94px;
-    // margin: 0;
-    // padding: 0;
-    // height: 878px;
     height: 874px;
     width: 800px;
     position: absolute;
     left: 0;
-    // top: 75px;
     top: 76px;
     margin: 0;
     padding: 0;
-
+}
+.btn__email-footer{
+width: 56px;
+height: 56px;
+background: $green;
+border-radius: 50%;
+position: absolute;
+right: 26px;
+top: 513px;
+cursor: pointer;
+&::after{
+    content: "";
+    background-image: url('../img/arrow-footer.svg');
+    position: relative;
+    top: 19px;
+    left: 14px;
+    display: block;
+    width: 24px;
+    height: 18px;
+}
 }
 }
