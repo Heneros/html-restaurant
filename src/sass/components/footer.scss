@@ -42,14 +42,36 @@ footer {
             line-height: 24px;
         }
     }
+
  }
+ .social__links{
+    display: flex;
+    justify-content: right;
+    color: #000000;
+    font-size: 14px;
+    line-height: 24px;
+
+}
+.social__icons-footer{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    position: relative;
+    bottom: 15px;
+    margin-right: 98px;
+    li{
+        padding: 0 5px;
+    }
+}
 .sprout {
     background: url('../img/sprout.png') no-repeat;
     height: 874px;
     width: 800px;
     position: absolute;
     left: 0;
-    top: 76px;
+    // top: 99px;
+    bottom: 0;
     margin: 0;
     padding: 0;
 }
