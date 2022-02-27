@@ -3078,7 +3078,8 @@ body.menu-open {
 
 footer {
   background-color: #FFF5EC;
-  position: relative; }
+  position: relative;
+  max-height: 874px; }
   footer .text__notified {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3094,7 +3095,7 @@ footer {
         -ms-flex: 1;
             flex: 1;
     text-align: center;
-    padding: 272px 0;
+    padding: 210px 0;
     max-width: 555px;
     text-transform: capitalize;
     margin: 0 auto;
@@ -3156,7 +3157,7 @@ footer {
     width: 800px;
     position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: -7px;
     margin: 0;
     padding: 0; }
   footer .btn__email-footer {
@@ -3166,7 +3167,7 @@ footer {
     border-radius: 50%;
     position: absolute;
     right: 26px;
-    top: 513px;
+    top: 448px;
     cursor: pointer; }
     footer .btn__email-footer::after {
       content: "";
@@ -3177,6 +3178,18 @@ footer {
       display: block;
       width: 24px;
       height: 18px; }
+
+@media only screen and (max-width: 1725px) and (min-width: 1550px) {
+  footer .sprout {
+    left: -91px; } }
+
+@media only screen and (max-width: 1550px) and (min-width: 1320px) {
+  footer .sprout {
+    left: -191px; } }
+
+@media only screen and (max-width: 1320px) and (min-width: 1020px) {
+  footer .sprout {
+    left: -191px; } }
 
 /* Slider */
 .slick-slider {

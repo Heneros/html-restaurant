@@ -1,13 +1,14 @@
 footer {
     background-color: $beige;
     position: relative;
+    max-height: 874px;
     .text__notified{
     display: flex;
     flex-direction: column;
     align-items: center;
     flex: 1;
     text-align: center;
-    padding: 272px 0;
+    padding: 210px 0;
     max-width: 555px;
     text-transform: capitalize;
     margin: 0 auto;
@@ -71,7 +72,7 @@ footer {
     position: absolute;
     left: 0;
     // top: 99px;
-    bottom: 0;
+    bottom: -7px;
     margin: 0;
     padding: 0;
 }
@@ -82,7 +83,7 @@ background: $green;
 border-radius: 50%;
 position: absolute;
 right: 26px;
-top: 513px;
+top: 448px;
 cursor: pointer;
 &::after{
     content: "";
@@ -95,4 +96,20 @@ cursor: pointer;
     height: 18px;
 }
 }
+}
+
+@media only screen and (max-width: 1725px)and (min-width: 1550px){
+    footer .sprout {
+        left: -91px;
+    }
+}
+@media only screen and (max-width: 1550px)and (min-width: 1320px){
+    footer .sprout {
+        left: -191px;
+    }
+}
+@media only screen and (max-width: 1320px)and (min-width: 1020px){
+    footer .sprout {
+        left: -191px;
+    }
 }
