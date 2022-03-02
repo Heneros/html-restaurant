@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
     <link rel="stylesheet" href="css/style.css">
     <title>Expice</title>
 </head>    
@@ -60,11 +59,18 @@
                    </div>
                </p> 
               <div class="input__btn">
-                <input 
-                class="search__food"
+              
+                <!-- <input 
                 type="search" 
-                name="search__food" 
-                placeholder="search restaurant, food">
+                placeholder="search restaurant, food"
+                class="search__food"
+                id="search__food"
+                > -->
+                <input type="search" id="site-search" name="q"
+                class="search__food"
+       placeholder="search restaurant, food" aria-label="Search through site content">
+
+
                <div class="container__btn-search">
                 <a href="#!" class="search__btn" data-back="Submit" data-front="Go"></a>
                </div>

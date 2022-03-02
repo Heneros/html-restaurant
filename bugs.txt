@@ -1,5 +1,5 @@
 Minor Bugs to fix:
-     Menu adaptive half not showing
+     Menu adaptive half not showing - fixed
      Adaptive btn in slider header half working hover
      Poineter property add to arrows
      Hover to arrows
