@@ -1,9 +1,9 @@
 Minor Bugs to fix:
      Menu adaptive half not showing - fixed
-     Adaptive btn in slider header half working hover
-     Poineter property add to arrows
-     Hover to arrows
-     > 999px header slider increase width image item
+     Adaptive btn in slider header half working hover  - fixed
+     Poineter property add to arrows - fixed
+     > 999px header slider increase width image item - fixed
+     > 435px scroll horizontal appear
      > 700px .input__btn increase width
      button in header slider. move it higher 
      'See More' is transferred to another line on adaptive
