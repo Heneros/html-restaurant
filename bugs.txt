@@ -3,8 +3,10 @@ Minor Bugs to fix:
      Adaptive btn in slider header half working hover  - fixed
      Poineter property add to arrows - fixed
      > 999px header slider increase width image item - fixed
-     > 435px scroll horizontal appear
-     > 700px .input__btn increase width
-     button in header slider. move it higher 
-     'See More' is transferred to another line on adaptive
-     top-restaurant section > 1250 title make align
+     > 435px scroll horizontal appear - fixed
+     > 700px .input__btn increase width - fixed
+     button in header slider. move it higher - fixed
+     'See More' is transferred to another line on adaptive - fixed
+     top-restaurant section > 1250 title make align  - fixed
+     Menu adaptive cuts. Not all show
+     >999px dots slider-header make smaller
