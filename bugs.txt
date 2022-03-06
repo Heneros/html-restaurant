@@ -8,5 +8,10 @@ Minor Bugs to fix:
      button in header slider. move it higher - fixed
      'See More' is transferred to another line on adaptive - fixed
      top-restaurant section > 1250 title make align  - fixed
-     Menu adaptive cuts. Not all show
-     >999px dots slider-header make smaller
+     Menu adaptive cuts. Not all showing - fixed
+     >999px dots slider-header make smaller - fixed
+     >1283px adaptive "location__name" on slider section header - fixed
+     >960px block text__description-restaurant need to move block lower - fixed
+     hamburger icon not aligned strips - fixed
+     green strip. pseudo-element. title. make longer 
+ 
